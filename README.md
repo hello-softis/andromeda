@@ -62,4 +62,4 @@ Desenvolvido por [Softis©](https://github.com/hello-softis). Entre em contato!
 
 ## Licença
 
-Este projeto está licenciado sob uma licença fechada. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob uma licença fechada. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
