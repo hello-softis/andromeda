@@ -1,19 +1,19 @@
-## Licença
+## License
 
-Este software é propriedade da Softis. Todos os direitos são reservados.
+This software is the property of Softis. All rights are reserved.
 
-### Termos de Licença
+### License Terms
 
-1. **Uso**: A utilização deste software é restrita aos clientes que adquirirem uma licença comercial. A licença é concedida apenas ao adquirente, não podendo ser redistribuída, compartilhada ou revendida.
+1. **Usage**: The use of this software is restricted to clients who acquire a commercial license. The license is granted only to the purchaser and cannot be redistributed, shared, or resold.
 
-2. **Distribuição**: O código-fonte deste software não pode ser redistribuído, modificado ou compartilhado, em parte ou no todo, sem a permissão expressa da Softis.
+2. **Distribution**: The source code of this software cannot be redistributed, modified, or shared, in whole or in part, without the express permission of Softis.
 
-3. **Modificações**: Quaisquer modificações no software devem ser aprovadas pela Softis. Modificações sem permissão não são cobertas pelo suporte técnico.
+3. **Modifications**: Any modifications to the software must be approved by Softis. Unauthorized modifications are not covered by technical support.
 
-4. **Suporte e Atualizações**: A Softis oferece suporte e atualizações para os clientes com licença ativa. Para continuar recebendo suporte e atualizações, a licença deve ser renovada conforme os termos do contrato de suporte.
+4. **Support and Updates**: Softis provides support and updates for clients with an active license. To continue receiving support and updates, the license must be renewed according to the support contract terms.
 
-5. **Responsabilidade**: A Softis não se responsabiliza por qualquer dano, direto ou indireto, que possa resultar do uso do software, mesmo que a Softis tenha sido avisada da possibilidade de tais danos.
+5. **Liability**: Softis is not responsible for any direct or indirect damages that may result from the use of the software, even if Softis has been advised of the possibility of such damages.
 
-6. **Rescisão**: A licença pode ser rescindida a qualquer momento se o usuário violar os termos deste acordo. Em caso de rescisão, o usuário deve cessar imediatamente o uso do software e destruir todas as cópias em sua posse.
+6. **Termination**: The license may be terminated at any time if the user violates the terms of this agreement. In the event of termination, the user must immediately cease use of the software and destroy all copies in their possession.
 
-Para obter uma licença comercial ou para mais informações, entre em contato com a Softis em [hello@softis.com](mailto:hello@softis.com).
+To obtain a commercial license or for more information, please contact Softis at [hello@softis.com](mailto:hello@softis.com).
