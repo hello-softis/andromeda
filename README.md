@@ -2,7 +2,7 @@
   <img src="./public/logo.svg" width="500px" height="500px" />
 </div>
 
-<h1 style="color: #9956F6;">Andromeda</h1>
+# <span style="color: #9956F6;">Andromeda</span>
 
 Andromeda é o Design System da Softis, projetado para criar interfaces de usuário coesas e eficientes. Com componentes reutilizáveis, diretrizes claras e documentação completa, Andromeda ajuda a construir produtos digitais com consistência e qualidade.
 
