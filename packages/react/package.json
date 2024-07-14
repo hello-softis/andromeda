@@ -1,9 +1,8 @@
 {
-  "name": "@andromeda/tokens",
-  "version": "1.1.0",
+  "name": "@andromeda/react",
+  "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "index.js",
   "scripts": {
     "dev": "tsup src/index.ts --format esm,cjs --dts",
     "build": "tsup src/index.ts --format esm,cjs --dts --watch"
@@ -11,6 +10,7 @@
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
+    "@andromeda/tokens": "*",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
