@@ -1,14 +1,16 @@
 {
   "name": "@andromeda/tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --watch"
   },
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
+    "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
 }
