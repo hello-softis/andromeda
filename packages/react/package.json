@@ -2,18 +2,28 @@
   "name": "@andromeda/react",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsup src/index.ts --format esm,cjs --dts",
-    "build": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
+    "@andromeda/eslint-config": "*",
     "@andromeda/tokens": "*",
     "@andromeda/ts-config": "*",
-    "@andromeda/eslint-config": "*",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "postcss": "^8.4.39",
+    "react": "^18.3.1",
+    "tailwindcss": "^3.4.4",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }
