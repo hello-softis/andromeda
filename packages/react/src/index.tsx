@@ -1,5 +1,5 @@
 import './index.css'
 
 export function App() {
-  return <h1 className="text-softisLight">Hello World</h1>
+  return <h1 className="text-softisMid">Hello World</h1>
 }
