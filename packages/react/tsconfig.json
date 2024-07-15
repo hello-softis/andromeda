@@ -1,0 +1,4 @@
+{
+  "extends": "@andromeda/ts-config/react.json",
+  "include": ["src"],
+}
