@@ -87,7 +87,9 @@ Com essa configuração, você pode usar as cores do Andromeda diretamente nas c
 ![React](./public/readme/languages/react-ts.svg "React")
 ![Tailwind](./public/readme/languages/tailwind.svg "Tailwind CSS")
 ![TypeScript](./public/readme/languages/typescript.svg "TypeScript")
+![Turborepo](./public/readme/languages/turborepo.svg "Turborepo")
 ![npm](./public/readme/languages/npm.svg "npm")
+![others](./public/readme/languages/symbols.svg "Others")
 
 ## Autor
 
