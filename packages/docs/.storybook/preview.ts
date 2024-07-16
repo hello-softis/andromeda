@@ -1,6 +1,8 @@
 import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming';
 import '../src/index.css';
+import '@andromeda/tokens'
+import '../tailwind.config'
 
 const preview: Preview = {
   parameters: {
