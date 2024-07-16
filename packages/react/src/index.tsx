@@ -1,35 +1,28 @@
-import type { ComponentProps, ReactNode } from 'react'
-import './styles/index.css'
-import { tv, type VariantProps } from 'tailwind-variants'
+import { styled } from './styles'
 
-const buttonVariants = tv({
-  base: 'rounded-lg px-5 py-2 font-medium flex items-center gap-2 justify-center',
+export const Button = styled('button', {
+  fontFamily: '$default',
+  backgroundColor: '$softisLow',
+  borderRadius: '$sm',
+
+  border: 0,
+  fontWeight: 'bold',
+  color: '$white',
+
   variants: {
-    colors: {
-      primary: 'bg-lime-300 text-lime-950 hover:bg-lime-400',
-      secondary: 'bg-zinc-800 text-zinc-200 hover:bg-zinc-700',
-    },
-    sizes: {
-      default: 'py-2 font-default',
-      full: 'w-full h-11',
-    },
-    defaultVariants: {
-      colors: 'primary',
-      sizes: 'default',
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      big: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
     },
   },
+
+  defaultVariants: {
+    size: 'small',
+  },
 })
-
-interface ButtonProps
-  extends ComponentProps<'button'>,
-    VariantProps<typeof buttonVariants> {
-  children: ReactNode
-}
-
-export function App({ children, colors, sizes, ...props }: ButtonProps) {
-  return (
-    <button {...props} className={buttonVariants({ colors, sizes })}>
-      {children}
-    </button>
-  )
-}
