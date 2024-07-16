@@ -47,6 +47,39 @@ Inicie a aplicação:
 ```bash
 npm run dev
 ```
+## Integração com Tailwind
+
+Andromeda pode ser facilmente integrado ao Tailwind CSS, permitindo que você utilize as cores definidas no Design System diretamente em suas classes utilitárias do Tailwind. Para isso, você precisa configurar o arquivo tailwind.config.js do seu projeto para importar as cores do pacote de tokens do Andromeda.
+
+Primeiro, instale o pacote de tokens:
+
+```bash
+npm install @andromeda/tokens
+```
+
+Em seguida, configure o arquivo tailwind.config.js para adicionar as cores do Andromeda:
+
+```bash
+import * as tokens from '@andromeda/tokens'
+
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: tokens.colors,
+      fontSize: tokens.fontSizes,
+      fontWeight: tokens.fontWeights,
+      fontFamily: tokens.fonts,
+      lineHeight: tokens.lineHeights,
+      borderRadius: tokens.radii,
+      spacing: tokens.space,
+    },
+  },
+  plugins: [],
+}
+  ```
+
+Com essa configuração, você pode usar as cores do Andromeda diretamente nas classes do Tailwind CSS, garantindo consistência visual e aproveitando os benefícios de um design system bem definido.
 
 ## Tecnologias Utilizadas
 
@@ -54,7 +87,9 @@ npm run dev
 ![React](./public/readme/languages/react-ts.svg "React")
 ![Tailwind](./public/readme/languages/tailwind.svg "Tailwind CSS")
 ![TypeScript](./public/readme/languages/typescript.svg "TypeScript")
+![Turborepo](./public/readme/languages/turborepo.svg "Turborepo")
 ![npm](./public/readme/languages/npm.svg "npm")
+![others](./public/readme/languages/symbols.svg "Others")
 
 ## Autor
 
