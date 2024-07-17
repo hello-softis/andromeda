@@ -1,4 +1,5 @@
 export * from './colors'
+export * from './tailwind'
 
 export * from './space'
 export * from './radii'

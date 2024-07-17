@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-import * as tokens from '@andromeda/tokens'
+import * as tokens from '@andromeda/tokens';
 
 export default {
-  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['../react/src/**/*.{js,ts,jsx,tsx}','./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: tokens.colors,
+      colors: tokens.twColors,
       fontSize: tokens.fontSizes,
       fontWeight: tokens.fontWeights,
       fontFamily: tokens.fonts,
@@ -15,4 +15,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

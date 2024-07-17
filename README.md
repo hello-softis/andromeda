@@ -60,13 +60,14 @@ npm install @andromeda/tokens
 Em seguida, configure o arquivo tailwind.config.js para adicionar as cores do Andromeda:
 
 ```bash
-import * as tokens from '@andromeda/tokens'
+/** @type {import('tailwindcss').Config} */
+import * as tokens from '@andromeda/tokens';
 
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['../react/src/**/*.{js,ts,jsx,tsx}','./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: tokens.colors,
+      colors: tokens.twColors,
       fontSize: tokens.fontSizes,
       fontWeight: tokens.fontWeights,
       fontFamily: tokens.fonts,
@@ -76,7 +77,7 @@ export default {
     },
   },
   plugins: [],
-}
+};
   ```
 
 Com essa configuração, você pode usar as cores do Andromeda diretamente nas classes do Tailwind CSS, garantindo consistência visual e aproveitando os benefícios de um design system bem definido.
