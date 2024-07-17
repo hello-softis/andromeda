@@ -1,6 +1,15 @@
 {
+  "name": "andromeda",
   "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "turbo": "^2.0.7"
+  },
+  "packageManager": "npm@10.0.0"
 }

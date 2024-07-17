@@ -6,7 +6,7 @@
   "module": "./dist/index.mjs",
   "scripts": {
     "dev": "tsup src/index.ts --format esm,cjs --dts",
-    "build": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
