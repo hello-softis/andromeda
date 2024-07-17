@@ -1,4 +1,4 @@
-*.mdx
 node_modules
 dist
 .turbo
+*.idx
