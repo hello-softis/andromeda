@@ -15,6 +15,7 @@
     "@andromeda/tokens": "*",
     "@storybook/addon-a11y": "^8.1.1",
     "@storybook/components": "^8.2.4",
+    "polished": "^4.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-variants": "^0.2.1"

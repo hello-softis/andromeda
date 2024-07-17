@@ -5,41 +5,22 @@ import Andromeda from "./assets/logo.svg";
 import Tokens from "./assets/tokens.jpg";
 import Components from "./assets/components.jpg";
 import TailwindAndAndromeda from "./assets/tailwindAndAndromeda.jpg";
-import Linter from "./assets/eslint.png";
 
 import Github from "./assets/github.svg";
 import Linkedin from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 
-export const RightArrow = () => (
-  <svg
-    viewBox="0 0 14 14"
-    width="8px"
-    height="14px"
-    style={{
-      marginLeft: '4px',
-      display: 'inline-block',
-      shapeRendering: 'inherit',
-      verticalAlign: 'middle',
-      fill: 'currentColor',
-      'path fill': 'currentColor'
-    }}
-  >
-    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
-  </svg>
-);
-
 <Meta title="Home" />
 
 <div className="sb-container">
   <div className='sb-section-title' align='center'>
-    <h1 className='title'>Bem-vindo ao Andromeda</h1>
-    <img src={Andromeda} alt="Logo do Andromeda Design System" />
+    <h1 className='title'>Welcome to Andromeda</h1>
+    <img src={Andromeda} alt="Andromeda Design System Logo" />
   </div>
   <div className='sb-section-title'>
-    # Sobre o Andromeda
+    # About Andromeda
 
-    O **Andromeda** é o design system da **Softis**, criado para garantir consistência, eficiência e escalabilidade no desenvolvimento de interfaces. Ele foi pensado para atender às necessidades da nossa equipe de desenvolvimento e design, proporcionando uma experiência fluida e agradável para nossos usuários.
+    **Andromeda** is the design system of **Softis**, created to ensure consistency, efficiency, and scalability in interface development. It was designed to meet the needs of our development and design team, providing a smooth and pleasant experience for our users.
   </div>
 </div>
 
@@ -47,80 +28,62 @@ export const RightArrow = () => (
   <div className='sb-section-title'>
     # Features
 
-    O Andromeda Design System oferece uma ampla gama de recursos para melhorar a experiência de desenvolvimento e garantir a consistência em todos os projetos. Aqui estão algumas das principais funcionalidades que você pode explorar e utilizar:
+    The Andromeda Design System offers a wide range of features to enhance the development experience and ensure consistency across all projects. Here are some of the main features you can explore and use:
   </div>
 
   <div className="sb-section">
     <div className="sb-features-grid">
       <div className="sb-grid-item">
-        <img src={Tokens} alt="Exemplo de tokens de design com cores e variáveis" />
+        <img src={Tokens} alt="Example of design tokens with colors and variables" />
         <h4 className="sb-section-item-heading">Tokens</h4>
         <p className="sb-section-item-paragraph">
-          Tokens de design permitem a padronização de cores, espaçamentos e outros valores de estilo, garantindo consistência visual em toda a aplicação.
+          Design tokens allow for the standardization of colors, spacing, and other style values, ensuring visual consistency throughout the application.
         </p>
-        <a
-          href="https://storybook.js.org/docs/writing-docs/autodocs/?renderer=react"
-          target="_blank"
-        >
-          Learn more<RightArrow />
-        </a>
       </div>
       <div className="sb-grid-item">
-        <img src={Components} alt="Exemplo de componentes customizáveis em Storybook" />
-        <h4 className="sb-section-item-heading">Componentes Customizáveis</h4>
+        <img src={Components} alt="Example of customizable components in Storybook" />
+        <h4 className="sb-section-item-heading">Customizable Components</h4>
         <p className="sb-section-item-paragraph">
-          Nossos componentes são altamente customizáveis, permitindo ajustes de aparência e comportamento para atender às necessidades específicas do seu projeto.
+          Our components are highly customizable, allowing for adjustments in appearance and behavior to meet the specific needs of your project.
         </p>
-        <a
-          href="https://storybook.js.org/docs/sharing/publish-storybook/?renderer=react#publish-storybook-with-chromatic"
-          target="_blank"
-        >
-          Learn more<RightArrow />
-        </a>
       </div>
       <div className="sb-grid-item">
-        <img src={TailwindAndAndromeda} alt="Integração entre Tailwind CSS e o Andromeda Design System" />
-        <h4 className="sb-section-item-heading">Integração com Tailwind</h4>
+        <img src={TailwindAndAndromeda} alt="Integration between Tailwind CSS and the Andromeda Design System" />
+        <h4 className="sb-section-item-heading">Tailwind Integration</h4>
         <p className="sb-section-item-paragraph">
-          Integre facilmente o Tailwind CSS com nosso design system, permitindo um design rápido e responsivo usando classes utilitárias pré-definidas.
+          Easily integrate Tailwind CSS with our design system, allowing for quick and responsive design using predefined utility classes.
         </p>
-        <a
-          href="https://storybook.js.org/docs/sharing/publish-storybook/?renderer=react#publish-storybook-with-chromatic"
-          target="_blank"
-        >
-          Learn more<RightArrow />
-        </a>
       </div>
     </div>
   </div>
 </div>
 
 <div className='sb-section-title'>
-  # Sobre a Softis
+  # About Softis
 
-  A **Softis** é uma startup focada na criação de softwares inovadores, com uma equipe dedicada a entregar as melhores soluções para nossos clientes. Conheça mais sobre nosso trabalho e visão em [nosso site](https://softis.com).
+  **Softis** is a startup focused on creating innovative software, with a team dedicated to delivering the best solutions for our clients. Learn more about our work and vision on [our website](https://softis.com).
 </div>
 
 <div className="sb-section sb-socials">
   <div className="sb-section-item">
     <a href="https://github.com/hello-softis" target="_blank">
-      <img src={Github} alt="Logo do GitHub" className="sb-explore-image"/>
+      <img src={Github} alt="GitHub Logo" className="sb-explore-image"/>
     </a>
   </div>
   <div className="sb-section-item">
     <a href="https://linkedin.com/company/hellosoftis" target="_blank">
-      <img src={Linkedin} alt="Logo do GitHub" className="sb-explore-image"/>
+      <img src={Linkedin} alt="LinkedIn Logo" className="sb-explore-image"/>
     </a>
   </div>
   <div className="sb-section-item">
     <a href="https://www.instagram.com/hello.softis/" target="_blank">
-      <img src={Instagram} alt="Logo do GitHub" className="sb-explore-image"/>
+      <img src={Instagram} alt="Instagram Logo" className="sb-explore-image"/>
     </a>
   </div>
 </div>
 
 <div className="copy" align='center'>
-  &copy; 2024 Softis. Todos os direitos reservados.
+  &copy; 2024 Softis. All rights reserved.
 </div>
 
 <style>
@@ -152,6 +115,10 @@ export const RightArrow = () => (
     flex: 1;
     display: flex;
     flex-direction: column;
+  }
+
+  .sb-grid-item h4 {
+    font-weight: 700;
   }
 
   .sb-section-item-heading {

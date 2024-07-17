@@ -6,8 +6,8 @@ const buttonVariants = tv({
   base: 'rounded-lg px-5 py-2 font-medium flex items-center gap-2 justify-center text-white',
   variants: {
     colors: {
-      primary: 'bg-softisLight',
-      secondary: 'bg-comet900',
+      primary: 'bg-softis-light',
+      secondary: 'bg-comet-900',
     },
     sizes: {
       default: 'py-2 font-default',
