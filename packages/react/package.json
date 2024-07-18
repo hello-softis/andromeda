@@ -1,12 +1,12 @@
 {
   "name": "@andromeda/react",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix"
   },
