@@ -1,0 +1,1 @@
+import{k as a}from"./index-BazGwx4h.js";import"./index-RYns6xqu.js";const o={parameters:{docs:{theme:a.dark},backgrounds:{default:"dark",values:[{name:"dark",value:"#202024"}]},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{o as default};
