@@ -4,7 +4,7 @@
 
 # <span style="color: #9956F6;">Andromeda</span>
 
-Andromeda é o Design System da Softis, projetado para criar interfaces de usuário coesas e eficientes. Com componentes reutilizáveis, diretrizes claras e documentação completa, Andromeda ajuda a construir produtos digitais com consistência e qualidade.
+Andromeda is the Design System of Softis, designed to create cohesive and efficient user interfaces. With reusable components, clear guidelines, and comprehensive documentation, Andromeda helps build digital products with consistency and quality.
 
 ## Badges
 
@@ -12,59 +12,60 @@ Andromeda é o Design System da Softis, projetado para criar interfaces de usuá
 ![Update](https://img.shields.io/badge/Update-July%202024-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Update)
 ![License](https://img.shields.io/badge/License-Commercial-black?style=for-the-badge&logo=license&logoColor=white&color=black&labelColor=black&label=License)
 
-## Status do Projeto
+## Project Status
 
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Status)
+![Status](https://img.shields.io/badge/Status-In%20Development-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Status)
 
-## Tabela de Conteúdos
+## Table of Contents
 
-- [Pré-requisitos e Como Rodar o App](#pré-requisitos-e-como-rodar-o-app)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Autor](#autor)
-- [Licença](#licença)
+- [Prerequisites and How to Run the App](#prerequisites-and-how-to-run-the-app)
+- [Integration with Tailwind](#integration-with-tailwind)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
+- [License](#license)
 
-## Pré-requisitos e Como Rodar o App
+## Prerequisites and How to Run the App
 
-### Pré-requisitos
+### Prerequisites
 
-- Node.js versão 21.x ou superior
-- Yarn ou npm
+- Node.js version 21.x or higher
+- Yarn or npm
 
-### Como Rodar
+### How to Run
 
-Clone o repositório:
+Clone the repository:
 ```bash
 git clone https://github.com/hello-softis/andromeda
 ```
 
-Instale as dependências:
+Install the dependencies:
 ```bash
 cd andromeda
 npm install
 ```
 
-Inicie a aplicação:
+Start the application:
 ```bash
 npm run dev
 ```
-## Integração com Tailwind
+## Integration with Tailwind
 
-Andromeda pode ser facilmente integrado ao Tailwind CSS, permitindo que você utilize as cores definidas no Design System diretamente em suas classes utilitárias do Tailwind. Para isso, você precisa configurar o arquivo tailwind.config.js do seu projeto para importar as cores do pacote de tokens do Andromeda.
+Andromeda can be easily integrated with Tailwind CSS, allowing you to use the colors defined in the Design System directly in your Tailwind utility classes. To do this, you need to configure your project's tailwind.config.js file to import the colors from the Andromeda tokens package.
 
-Primeiro, instale o pacote de tokens:
+First, install the tokens package:
 
 ```bash
 npm install @andromeda/tokens
 ```
 
-Em seguida, configure o arquivo tailwind.config.js para adicionar as cores do Andromeda:
+Next, configure the tailwind.config.js file to add Andromeda's colors:
 
 ```bash
 /** @type {import('tailwindcss').Config} */
 import * as tokens from '@andromeda/tokens';
 
 export default {
-  content: ['../react/src/**/*.{js,ts,jsx,tsx}','./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: tokens.twColors,
@@ -78,11 +79,11 @@ export default {
   },
   plugins: [],
 };
-  ```
+```
 
-Com essa configuração, você pode usar as cores do Andromeda diretamente nas classes do Tailwind CSS, garantindo consistência visual e aproveitando os benefícios de um design system bem definido.
+With this configuration, you can use Andromeda's colors directly in Tailwind CSS classes, ensuring visual consistency and leveraging the benefits of a well-defined design system.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 ![Storybook](./public/readme/languages/storybook.svg "Storybook")
 ![React](./public/readme/languages/react-ts.svg "React")
@@ -92,10 +93,10 @@ Com essa configuração, você pode usar as cores do Andromeda diretamente nas c
 ![npm](./public/readme/languages/npm.svg "npm")
 ![others](./public/readme/languages/symbols.svg "Others")
 
-## Autor
+## Author
 
-Desenvolvido por [Softis©](https://github.com/hello-softis). Entre em contato!
+Developed by [Softis©](https://github.com/hello-softis). Get in touch!
 
-## Licença
+## License
 
-Este projeto está licenciado sob uma licença fechada. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is licensed under a closed license. See the [LICENSE](LICENSE.md) file for more details.
