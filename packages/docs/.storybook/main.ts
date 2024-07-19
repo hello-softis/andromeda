@@ -16,11 +16,14 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-interactions"),
-    "@storybook/addon-styling-webpack"
+    "@storybook/addon-styling-webpack",
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
+  docs: {
+    autodocs: false
+  }
 };
 export default config;

@@ -1,4 +1,4 @@
 export const fonts = {
-  default: 'Exo 2',
-  code: 'JetBrains Mono',
-}
+  default: 'Exo 2, sans-serif',
+  code: 'JetBrains Mono, monospace',
+};
