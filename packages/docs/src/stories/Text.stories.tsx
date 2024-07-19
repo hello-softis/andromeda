@@ -8,7 +8,7 @@ export default {
   args: {
     children: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque debitis, officia illo repudiandae, tenetur praesentium tempore recusandae eius, blanditiis sequi! Pariatur error eligendi quam modi quibusdam molestias eaque quo.',
     sizes: 'md',
-    weight: false
+    weight: false,
   },
   argTypes: {
     sizes: {

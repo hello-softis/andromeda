@@ -5,7 +5,7 @@ export default {
   content: ['../react/src/**/*.{js,ts,jsx,tsx}','./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      colors: tokens.tw,
+      colors: tokens.colors,
       fontSize: tokens.fontSizes,
       fontWeight: tokens.fontWeights,
       fontFamily: {
