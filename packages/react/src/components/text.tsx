@@ -1,9 +1,9 @@
-import type { ComponentProps, ElementType, ReactNode } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
 import { tv, VariantProps } from 'tailwind-variants';
 import '../index.css';
 
 const buttonVariants = tv({
-  base: 'text-grey-200 font-sans leading-normal m-0',
+  base: 'text-lime-200 font-mono leading-normal m-0',
   variants: {
     sizes: {
       xs: 'text-xs',
