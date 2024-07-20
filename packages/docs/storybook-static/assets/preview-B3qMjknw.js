@@ -1,1 +1,0 @@
-import{k as a}from"./index-BazGwx4h.js";/* empty css              */import"./index-RYns6xqu.js";const t={parameters:{docs:{theme:a.dark},backgrounds:{default:"dark",values:[{name:"dark",value:"#202024"}]},controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{t as default};

@@ -1,5 +1,4 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-
 import { join, dirname } from "path";
 
 /**
@@ -9,15 +8,14 @@ import { join, dirname } from "path";
 function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, "package.json")));
 }
+
 const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
-    getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-interactions"),
-    getAbsolutePath("@storybook/addon-docs"),
-    "@storybook/addon-styling-webpack",
+    "@storybook/addon-styling-webpack"
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -26,5 +24,11 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/design-system'
+    }
+    return config
+  }
 };
 export default config;
