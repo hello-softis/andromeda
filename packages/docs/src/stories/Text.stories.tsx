@@ -18,15 +18,16 @@ export default {
     weight: {
       control: { type: 'boolean' },
     }
-  } 
+  },
+  decorators: [
+    (Story) => (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="w-80">
+          <Story/>
+        </div>
+    </div>
+    ), 
+  ]
 } as Meta<TextProps>;
 
-export const Paragraph: StoryObj<TextProps> = {
-  render: (args) => (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="w-80">
-        <Text {...args} />
-      </div>
-    </div>
-  )
-}
+export const Default: StoryObj<TextProps> = {}

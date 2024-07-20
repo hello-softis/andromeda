@@ -24,15 +24,16 @@ export default {
     docs: {
       story: 'Por padrão o heading sempre será um `H2`, mas podemos alterar isso com a propriedade `as`'
     }
-  } 
+  },
+  decorators: [
+    (Story) => (
+      <div className="flex justify-center items-center min-h-screen">
+        <div>
+          <Story />
+        </div>
+    </div>
+    ),
+  ]
 } as Meta<HeadingProps>;
 
-export const Paragraph: StoryObj<HeadingProps> = {
-  render: (args) => (
-    <div className="flex justify-center items-center min-h-screen">
-      <div>
-        <Heading {...args} />
-      </div>
-    </div>
-  )
-}
+export const Default: StoryObj<HeadingProps> = {}

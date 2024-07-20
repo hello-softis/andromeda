@@ -4,13 +4,14 @@ import { Box, BoxProps } from '@andromeda/react';
 
 export default {
   title: 'Layout/Box',
-  component: Box
+  component: Box,
+  decorators: [
+    (Story) => (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Story />
+      </div>
+    ),
+  ],
 } as Meta<BoxProps>;
 
-export const Primary: StoryObj<BoxProps> = {
-  render: (args) => (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <Box {...args} />
-    </div>
-  ),
-};
+export const Default: StoryObj<BoxProps> = {}

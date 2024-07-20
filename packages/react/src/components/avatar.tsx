@@ -16,7 +16,7 @@ const avatarVariants = tv({
     theme: {
       default: 'outline-grey-100',
       creator: 'outline-danger-light',
-      educator: 'outline-softis-light',
+      educator: 'outline-softis-mid',
       moderator: 'outline-success-light',
       company: 'outline-grey-600'
     }
@@ -28,19 +28,19 @@ const avatarVariants = tv({
 });
 
 const themeColors = {
-  default: 'grey-100',
-  creator: 'danger-light',
-  educator: 'softis-light',
-  moderator: 'success-light',
-  company: 'grey-600',
+  default: 'bg-grey-100',
+  creator: 'bg-danger-light',
+  educator: 'bg-softis-mid',
+  moderator: 'bg-success-light',
+  company: 'bg-grey-600',
 };
 
 const textColors = {
-  default: 'grey-900',
-  creator: 'white',
-  educator: 'white',
-  moderator: 'grey-900',
-  company: 'white',
+  default: 'text-grey-900',
+  creator: 'text-white',
+  educator: 'text-white',
+  moderator: 'text-grey-900',
+  company: 'text-white',
 };
 
 export interface AvatarProps extends ComponentProps<typeof Avatar.Root>, VariantProps<typeof avatarVariants> {
@@ -52,15 +52,15 @@ export interface AvatarProps extends ComponentProps<typeof Avatar.Root>, Variant
 export function Avatars({ sizes, name, src, theme, label, ...props }: AvatarProps) {
   const outlineColor = themeColors[theme || 'default'];
   const textColor = textColors[theme || 'default'];
-
+  
   return (
     <div className="relative">
       <Avatar.Root {...props} className={avatarVariants({ sizes, theme })}>
-        <Avatar.Image className="w-full h-full object-cover rounded-full bg-softis-mid" src={src} alt={name} />
+        <Avatar.Image className="w-full h-full object-cover rounded-full bg-grey-900" src={src} alt={name} />
       </Avatar.Root>
       {label && sizes === 'xl' && (
-        <div className={`absolute bottom-[-0.75rem] left-1/2 transform -translate-x-1/2 bg-${outlineColor} text-${textColor} font-semibold text-xs text-center px-2 py-1 rounded`}>
-          {label}
+        <div className={`absolute bottom-[-0.75rem] left-1/2 transform -translate-x-1/2 ${outlineColor} ${textColor} font-bold leading-normal text-xxs text-center px-3 py-1 rounded text-nowrap whitespace-nowrap`}>
+          {label.toUpperCase()}
         </div>
       )}
     </div>
