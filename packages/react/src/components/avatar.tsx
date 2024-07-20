@@ -56,10 +56,10 @@ export function Avatars({ sizes, name, src, theme, label, ...props }: AvatarProp
   return (
     <div className="relative">
       <Avatar.Root {...props} className={avatarVariants({ sizes, theme })}>
-        <Avatar.Image className="w-full h-full object-cover rounded-full bg-softis-light" src={src} alt={name} />
+        <Avatar.Image className="w-full h-full object-cover rounded-full bg-softis-mid" src={src} alt={name} />
       </Avatar.Root>
       {label && sizes === 'xl' && (
-        <div className={`absolute bottom-[-0.75rem] left-1/2 transform -translate-x-1/2 bg-${outlineColor} text-${textColor} font-semibold text-xs px-2 py-1 rounded`}>
+        <div className={`absolute bottom-[-0.75rem] left-1/2 transform -translate-x-1/2 bg-${outlineColor} text-${textColor} font-semibold text-xs text-center px-2 py-1 rounded`}>
           {label}
         </div>
       )}
