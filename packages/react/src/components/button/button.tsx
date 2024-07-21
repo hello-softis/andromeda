@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from 'react';
 import { tv, VariantProps } from 'tailwind-variants';
-import '../index.css';
+import '../../index.css';
 
 const buttonVariants = tv({
   base: 'rounded-lg px-5 py-2 font-medium flex items-center gap-2 justify-center text-white',
