@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps } from '@andromeda/react';
+import { Box, BoxProps } from '../../react/dist';
 
 export default {
   title: 'Layout/Box',

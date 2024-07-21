@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Avatars, AvatarProps } from '@andromeda/react';
+import { Avatars, AvatarProps } from '../../react/dist';
 import { useEffect, useState } from 'react';
 
 const generateAvatarUrl = (name: string) => {

@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { CheckBox, CheckboxProps, Box, Text } from '@andromeda/react';
+import { CheckBox, CheckboxProps, Box, Text } from '../../react/dist';
 
 export default {
   title: 'Form/Checkbox',

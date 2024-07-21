@@ -1,5 +1,5 @@
 import './index.css';
-import { Text } from '@andromeda/react'
+import { Text } from '../react/dist'
 
 export function App() {
   return (
