@@ -3,33 +3,73 @@ import { tv, VariantProps } from 'tailwind-variants';
 import '../../index.css';
 
 const buttonVariants = tv({
-  base: 'rounded-lg px-5 py-2 font-medium flex items-center gap-2 justify-center text-white',
+  base: 'flex items-center justify-center rounded-md transition-all focus:outline-0',
   variants: {
     colors: {
-      primary: 'bg-softis-light',
-      secondary: 'bg-comet-900',
+      primary: 'bg-softis-mid hover:bg-softis-light',
+      secondary: 'border-[3px] border-solid border-softis-mid hover:border-softis-light',
+      tertiary: 'hover:bg-shape-tertiary',
+      danger: 'bg-shape-secondary hover:bg-shape-tertiary text-danger-light'
     },
     sizes: {
-      default: 'py-2 font-default',
-      full: 'w-full h-11',
+      xs: 'h-6 px-4',
+      sm: 'h-7 px-4',
+      md: 'h-8 px-4',
+      lg: 'h-10 px-6',
+      xlg: 'h-12 px-8'
+    },
+    full: {
+      false: 'w-auto',
+      true: 'w-full'
+    },
+    disable: {
+      false: 'opacity-1 cursor-pointer',
+      true: 'opacity-50 cursor-not-allowed',
     },
   },
   defaultVariants: {
     colors: 'primary',
-    sizes: 'default',
+    sizes: 'lg',
+    width: false,
+    disable: false
   },
 });
 
-interface ButtonProps
+const textVariants = tv({
+  base: 'font-sans font-bold',
+  variants: {
+    colors: {
+      primary: 'text-white',
+      secondary: 'text-white',
+      tertiary: 'text-white',
+      danger: 'text-danger-light'
+    },
+    sizes: {
+      xs: 'text-xs',
+      sm: 'text-xs',
+      md: 'text-xs',
+      lg: 'text-sm',
+      xlg: 'text-sm'
+    },
+  },
+  defaultVariants: {
+    colors: 'primary',
+    sizes: 'md',
+  }
+})
+
+export interface ButtonProps
   extends ComponentProps<'button'>,
     VariantProps<typeof buttonVariants> {
   children: ReactNode;
 }
 
-export function Button({ children, colors, sizes, ...props }: ButtonProps) {
+export function Button({ children, colors, sizes, disable, full, ...props }: ButtonProps) {
   return (
-    <button {...props} className={buttonVariants({ colors, sizes })}>
-      {children}
+    <button {...props} className={buttonVariants({ colors, sizes, disable, full })}>
+      <span className={textVariants({ colors, sizes })}>
+        {children}
+      </span>
     </button>
   );
 }
