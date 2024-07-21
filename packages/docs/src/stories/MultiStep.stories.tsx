@@ -3,7 +3,7 @@ import type { StoryObj, Meta } from '@storybook/react';
 import { MultiStep, MultiStepProps, Box } from '@andromeda/react';
 
 export default {
-  title: 'Form/MultiStep',
+  title: 'Navigation/MultiStep',
   component: MultiStep,
   args: {
     size: 3,
