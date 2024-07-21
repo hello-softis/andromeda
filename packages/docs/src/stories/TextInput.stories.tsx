@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { InputText, InputTextProps, Box, Text } from '../../react/dist';
+import { InputText, InputTextProps, Box, Text } from '@andromeda/react';
 
 export default {
   title: 'Form/TextInput',

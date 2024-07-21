@@ -6,7 +6,7 @@ export default {
   title: 'Navigation/MultiStep',
   component: MultiStep,
   args: {
-    size: 3,
+    size: 4,
     currentStep: 1
   },
   argTypes: {
@@ -17,7 +17,9 @@ export default {
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
         <Box className='w-full max-w-full'>
-            <Story/>
+          <div className='p-3'>
+            <Story />
+          </div>
         </Box>
       </div>
     )
