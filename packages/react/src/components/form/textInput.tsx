@@ -3,11 +3,11 @@ import { tv, VariantProps } from 'tailwind-variants';
 import '../../index.css';
 
 const textInputVariants = tv({
-  base: 'w-full py-3 px-4 rounded-sm border-2 box-border flex items-baseline gap-[1px] focus-within:border-softis-mid',
+  base: 'w-full bg-grey-900 py-3 px-4 rounded-sm border-0 box-border flex items-baseline gap-[1px] focus-within:border-2 focus-within:border-softis-mid',
   variants: {
     disabled: {
       true: 'opacity-0 cursor-not-allowed',
-      false: 'opacity-100',
+      false: 'opacity-1',
     },
   },
   defaultVariants: {

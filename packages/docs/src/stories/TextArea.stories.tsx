@@ -18,7 +18,7 @@ export default {
       <div className="flex justify-center items-center min-h-screen">
         <Box className='w-full max-w-full'>
           <div className='p-3 flex flex-col gap-2'>
-            <Text sizes='sm' weights='bold'>Observations</Text>
+            <Text sizes='sm' weight={true}>Observations</Text>
             <Story/>
           </div>
         </Box>
