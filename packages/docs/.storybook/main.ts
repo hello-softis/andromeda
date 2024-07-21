@@ -15,6 +15,7 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-interactions"),
+    "@storybook/addon-a11y",
     "@storybook/addon-styling-webpack"
   ],
   framework: {
