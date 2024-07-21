@@ -1,6 +1,6 @@
 {
   "name": "@andromeda/react",
-  "version": "3.9.0",
+  "version": "3.11.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
