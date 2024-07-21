@@ -8,7 +8,10 @@ export default {
       colors: tokens.twColors,
       fontSize: tokens.fontSizes,
       fontWeight: tokens.fontWeights,
-      fontFamily: tokens.fonts,
+      fontFamily: {
+        sans: tokens.fonts.default,
+        mono: tokens.fonts.code,
+      },
       lineHeight: tokens.lineHeights,
       borderRadius: tokens.radii,
       spacing: tokens.space,
