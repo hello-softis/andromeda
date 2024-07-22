@@ -11,6 +11,7 @@ export default {
     sizes: 'lg',
     full: false,
     disable: false,
+    loading: false
   },
   argTypes: {
     children: { control: 'text' },
@@ -24,6 +25,7 @@ export default {
     },
     disable: { control: 'boolean' },
     full: { control: 'boolean' },
+    loading: { control: 'boolean' },
   },
   decorators: [
     (Story) => (
@@ -63,6 +65,12 @@ export const Full: StoryObj<ButtonProps> = {
 export const Disable: StoryObj<ButtonProps> = {
   args: {
     disable: true,
+  }
+}
+
+export const Loading: StoryObj<ButtonProps> = {
+  args: {
+    loading: true
   }
 }
 

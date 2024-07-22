@@ -3,7 +3,7 @@ import { tv, VariantProps } from 'tailwind-variants';
 import '../index.css';
 
 const checkboxVariants = tv({
-  base: 'border-solid border-comet-300/50 border-t-comet-300 rounded-full animate-spin',
+  base: 'border-solid border-white/50 border-t-white rounded-full animate-spin',
   variants: {
     sizes: {
       sm: 'w-3 h-3 border-[2px] border-t-[2px]',
@@ -76,7 +76,7 @@ const checkboxVariants = tv({
   },
   defaultVariants: {
     sizes: 'md',
-    colors: 'nebula-500'
+    colors: 'white'
   }
 })
 

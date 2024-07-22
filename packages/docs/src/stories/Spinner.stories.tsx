@@ -66,7 +66,7 @@ const colorOptions = [
 ];
 
 export default {
-  title: 'Loading/Spinner',
+  title: 'Feedback/Spinner',
   component: Spinner,
   args: {
     sizes: 'md',

@@ -1,5 +1,6 @@
 import type { ComponentProps, ReactNode } from 'react';
 import { tv, VariantProps } from 'tailwind-variants';
+import { Spinner } from '../spinner'
 import '../../index.css';
 
 const buttonVariants = tv({
@@ -62,14 +63,15 @@ export interface ButtonProps
   extends ComponentProps<'button'>,
     VariantProps<typeof buttonVariants> {
   children: ReactNode;
+  loading: boolean
 }
 
-export function Button({ children, colors, sizes, disable, full, ...props }: ButtonProps) {
+export function Button({ children, colors, sizes, disable, full, loading, ...props }: ButtonProps) {
   return (
     <button {...props} className={buttonVariants({ colors, sizes, disable, full })}>
-      <span className={textVariants({ colors, sizes })}>
-        {children}
-      </span>
+      {loading === false 
+          ? <span className={textVariants({ colors, sizes })}>{children}</span> 
+            : <Spinner />}
     </button>
   );
 }
