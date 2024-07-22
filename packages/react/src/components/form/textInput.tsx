@@ -27,7 +27,7 @@ export function InputText({ children, prefix, disabled, ...props }: InputTextPro
       <input 
         {...props} 
         type="text" 
-        className='bg-transparent font-sans text-white border-0 w-full focus:outline-0 placeholder:text-grey-400 disabled:placeholder:text-transparent' 
+        className='bg-transparent font-sans text-white border-0 w-full focus:outline-0 placeholder:text-grey-300 disabled:placeholder:text-transparent' 
         disabled={disabled === true}
       />
     </div>

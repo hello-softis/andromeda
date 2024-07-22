@@ -5,7 +5,7 @@ import { tv, VariantProps } from 'tailwind-variants';
 import '../index.css';
 
 const checkboxVariants = tv({
-  base: 'bg-grey-900 rounded-sm leading-[0] cursor-pointer overflow-hidden box-border flex justify-center items-center border-2 border-solid border-grey-300 focus:border-softis-mid group aria-checked:bg-softis-light',
+  base: 'bg-grey-900 rounded-sm leading-[0] cursor-pointer overflow-hidden box-border flex justify-center items-center border-2 border-solid border-grey-300 focus:border-2 focus:border-solid focus:border-softis-mid group aria-checked:bg-softis-light',
   variants: {
     sizes: {
       sm: 'w-5 h-5',
