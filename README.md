@@ -93,6 +93,13 @@ With this configuration, you can use Andromeda's colors directly in Tailwind CSS
 ![npm](./public/readme/languages/npm.svg "npm")
 ![others](./public/readme/languages/symbols.svg "Others")
 
+#### Others
+- [Radix UI](https://radix-ui.com/ "Radix")
+- [Chakra-UI](https://chakra-ui.com/ "Chakra")
+- [Stitches](https://stitches.dev/ "Stitches")
+- [Tailwind Variants](https://www.tailwind-variants.org/ "Tailwind Variants")
+- [HugeIcons](https://hugeicons.com/ "HugeIcons")
+
 ## Author
 
 Developed by [Softis©](https://github.com/hello-softis). Get in touch!

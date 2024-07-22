@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Text, TextProps } from '../../react/dist';
+import { Text, TextProps } from '@andromeda/react';
 
 export default {
   title: 'Typography/Text',
