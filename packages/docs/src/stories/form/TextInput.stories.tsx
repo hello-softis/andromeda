@@ -1,4 +1,4 @@
-import '../index.css';
+import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { InputText, InputTextProps, Box, Text } from '@andromeda/react';
 
