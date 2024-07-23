@@ -1,6 +1,18 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { Button, ButtonProps } from '@andromeda/react';
+import { PlusIcon, GearIcon, DoubleArrowUpIcon } from '@radix-ui/react-icons'
+
+PlusIcon.displayName = 'PlusIcon';
+GearIcon.displayName = 'GearIcon';
+DoubleArrowUpIcon.displayName = 'DoubleArrowUpIcon';
+
+const iconMap = {
+  noIcon: '',
+  plus: <PlusIcon />,
+  gear: <GearIcon />,
+  doubleArrowUp: <DoubleArrowUpIcon />,
+};
 
 export default {
   title: 'Form/Button/Button',
@@ -11,7 +23,9 @@ export default {
     sizes: 'lg',
     full: false,
     disable: false,
-    loading: false
+    loading: false,
+    leadingIcon: iconMap['noIcon'],
+    trailingIcon: iconMap['noIcon']
   },
   argTypes: {
     children: { control: 'text' },
@@ -26,6 +40,16 @@ export default {
     disable: { control: 'boolean' },
     full: { control: 'boolean' },
     loading: { control: 'boolean' },
+    leadingIcon: {
+      control: { type: 'select' },
+      options: Object.keys(iconMap),
+      mapping: iconMap,
+    },
+    trailingIcon: {
+      control: { type: 'select' },
+      options: Object.keys(iconMap),
+      mapping: iconMap,
+    },
   },
   decorators: [
     (Story) => (

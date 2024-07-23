@@ -1,10 +1,13 @@
-import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { Box, BoxProps } from '@andromeda/react';
 
 export default {
   title: 'Layout/Box',
   component: Box,
+  argTypes: {
+    hover: { control: 'boolean' },
+    full: { control: 'boolean' }
+  },
   decorators: [
     (Story) => (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -14,4 +17,9 @@ export default {
   ],
 } as Meta<BoxProps>;
 
-export const Default: StoryObj<BoxProps> = {}
+export const Default: StoryObj<BoxProps> = {
+  args: {
+    hover: true,
+    full: false
+  },
+};

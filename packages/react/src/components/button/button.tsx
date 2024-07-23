@@ -4,7 +4,7 @@ import { Spinner } from '../spinner'
 import '../../index.css';
 
 const buttonVariants = tv({
-  base: 'flex items-center justify-center rounded-md transition-all focus:outline-0',
+  base: 'flex items-center justify-center rounded-md transition-all focus:shadow-md',
   variants: {
     colors: {
       primary: 'bg-softis-mid hover:bg-softis-light',
@@ -37,7 +37,7 @@ const buttonVariants = tv({
 });
 
 const textVariants = tv({
-  base: 'font-sans font-bold',
+  base: 'font-sans font-bold flex items-center justify-center gap-3',
   variants: {
     colors: {
       primary: 'text-white',
@@ -64,14 +64,20 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
   children: ReactNode;
   loading: boolean
+  leadingIcon: ReactNode
+  trailingIcon: ReactNode
 }
 
-export function Button({ children, colors, sizes, disable, full, loading, ...props }: ButtonProps) {
+export function Button({ children, colors, sizes, disable, full, loading, trailingIcon, leadingIcon, ...props }: ButtonProps) {
   return (
     <button {...props} className={buttonVariants({ colors, sizes, disable, full })}>
       {loading === false 
-          ? <span className={textVariants({ colors, sizes })}>{children}</span> 
-            : <Spinner />}
+          ? <span className={textVariants({ colors, sizes })}>
+              {leadingIcon ? leadingIcon : null}
+              {children}
+              {trailingIcon ? trailingIcon : null}
+            </span>  
+          : <Spinner />}
     </button>
   );
 }

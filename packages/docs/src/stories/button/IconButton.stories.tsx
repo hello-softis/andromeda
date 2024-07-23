@@ -3,6 +3,10 @@ import type { StoryObj, Meta } from '@storybook/react';
 import { ButtonIcon, ButtonIconProps } from '@andromeda/react';
 import { PlusIcon, GearIcon, DoubleArrowUpIcon } from '@radix-ui/react-icons'
 
+PlusIcon.displayName = 'PlusIcon';
+GearIcon.displayName = 'GearIcon';
+DoubleArrowUpIcon.displayName = 'DoubleArrowUpIcon';
+
 const iconMap = {
   plus: <PlusIcon />,
   gear: <GearIcon />,
