@@ -1,4 +1,4 @@
-import '../index.css';
+import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { CheckBox, CheckboxProps, Box, Text } from '@andromeda/react';
 
