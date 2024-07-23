@@ -2,5 +2,5 @@
   "name": "@andromeda/eslint-config",
   "author": "Softis",
   "private": true,
-  "main": "index.js"
+  "main": "index.ts"
 }

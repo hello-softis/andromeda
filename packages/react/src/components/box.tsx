@@ -11,7 +11,7 @@ export function Box({ children }: BoxProps) {
   const heightClass = hasChildren ? 'h-auto' : 'h-80';
 
   return (
-    <div className={`${widthClass} ${heightClass} rounded-md bg-shape-secondary hover:bg-shape-tertiary`}>
+    <div className={`${widthClass} ${heightClass} rounded-md bg-shape-secondary border border-solid border-grey-600 hover:bg-shape-tertiary`}>
       {children}
     </div>
   );

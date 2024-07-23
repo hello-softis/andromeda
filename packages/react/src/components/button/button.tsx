@@ -4,7 +4,7 @@ import { Spinner } from '../spinner'
 import '../../index.css';
 
 const buttonVariants = tv({
-  base: 'flex items-center justify-center rounded-md transition-all focus:outline-0',
+  base: 'flex items-center justify-center rounded-md transition-all focus:shadow-md',
   variants: {
     colors: {
       primary: 'bg-softis-mid hover:bg-softis-light',
