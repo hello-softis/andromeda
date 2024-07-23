@@ -1,7 +1,11 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { InputText, InputTextProps, Box, Text } from '@andromeda/react';
+import { InputText, InputTextProps } from '@andromeda/react';
 import { LockClosedIcon, EyeClosedIcon, EyeOpenIcon } from '@radix-ui/react-icons'
+
+LockClosedIcon.displayName = 'LockClosedIcon';
+EyeClosedIcon.displayName = 'EyeClosedIcon';
+EyeOpenIcon.displayName = 'EyeOpenIcon';
 
 const iconMap = {
   noIcon: '',
