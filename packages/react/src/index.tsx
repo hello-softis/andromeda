@@ -16,4 +16,4 @@ export * from './components/tag/tagDelete'
 export * from './components/switch'
 export * from './components/radio/radio'
 export * from './components/radio/radioGroup'
-
+export * from './components/slider'
