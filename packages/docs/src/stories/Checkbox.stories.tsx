@@ -17,7 +17,7 @@ export default {
   decorators: [
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
-        <Box className='w-full max-w-full'>
+        <Box hover={false} hasChildren={true} full={true}>
           <div className='p-3 flex flex-row gap-2 items-center'>
             <Story/>
             <Text sizes='sm' weight={true} >Accept terms of use</Text>

@@ -1,17 +1,35 @@
-import type { ComponentProps, ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import { tv, VariantProps } from 'tailwind-variants';
 import '../index.css';
 
-export interface BoxProps extends ComponentProps<'div'> {
+const boxVariants = tv({
+  base: 'rounded-md bg-shape-secondary border border-solid border-grey-600',
+  variants: {
+    hover: {
+      false: 'hover:bg-shape-secondary',
+      true: 'hover:bg-shape-tertiary'
+    },
+    hasChildren: {
+      false: 'w-80 h-80',
+      true: 'w-auto h-auto'
+    },
+    full: {
+      false: 'w-80 h-80',
+      true: 'w-full h-full'
+    }
+  }
+})
+
+export interface BoxProps extends VariantProps<typeof boxVariants> {
   children?: ReactNode;
+  hover?: boolean;
+  hasChildren?: boolean
+  full?: boolean
 }
 
-export function Box({ children }: BoxProps) {
-  const hasChildren = !!children;
-  const widthClass = hasChildren ? 'w-full' : 'w-80';
-  const heightClass = hasChildren ? 'h-auto' : 'h-80';
-
+export function Box({ children, hover, hasChildren, full }: BoxProps) {
   return (
-    <div className={`${widthClass} ${heightClass} rounded-md bg-shape-secondary border border-solid border-grey-600 hover:bg-shape-tertiary`}>
+    <div className={boxVariants({ hover, hasChildren, full })}>
       {children}
     </div>
   );

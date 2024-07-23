@@ -16,7 +16,7 @@ export default {
   decorators: [
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
-        <Box className='w-full max-w-full'>
+        <Box hover={false} hasChildren={true} full={true}>
           <div className='p-3'>
             <Story />
           </div>
