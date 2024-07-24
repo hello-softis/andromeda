@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { RadioGroup, RadioGroupProps } from '@andromeda/react';
+import { RadioGroup, RadioGroupProps, Radio } from '@andromeda/react';
 
 export default {
   title: 'Form/Radio/RadioGroup',
@@ -31,10 +31,24 @@ export const Default: StoryObj<RadioGroupProps> = {
   args: {
     defaultValue: 'default',
   },
+  render: (args) => (
+    <RadioGroup {...args}>
+      <Radio label="Default" value="default" id="r1" />
+      <Radio label="Comfortable" value="comfortable" id="r2" />
+      <Radio label="Compact" value="compact" id="r3" />
+    </RadioGroup>
+  ),
 };
 
 export const Disabled: StoryObj<RadioGroupProps> = {
   args: {
     disabled: true,
   },
+  render: (args) => (
+    <RadioGroup {...args}>
+      <Radio label="Default" value="default" id="r1" />
+      <Radio label="Comfortable" value="comfortable" id="r2" />
+      <Radio label="Compact" value="compact" id="r3" />
+    </RadioGroup>
+  ),
 };

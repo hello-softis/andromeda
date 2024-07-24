@@ -1,4 +1,4 @@
-import { useState, useEffect, type ComponentProps } from 'react';
+import { useState, useEffect, type ComponentProps, ReactNode } from 'react';
 import { tv, VariantProps } from 'tailwind-variants';
 import * as RadixRadioGroup from '@radix-ui/react-radio-group';
 import { Radio } from './radio';
@@ -18,11 +18,12 @@ const radioGroupVariants = tv({
 });
 
 export interface RadioGroupProps extends ComponentProps<typeof RadixRadioGroup.Root>, VariantProps<typeof radioGroupVariants> {
+  children: ReactNode
   disabled?: boolean;
   defaultValue?: string;
 }
 
-export function RadioGroup({ disabled, defaultValue, ...props }: RadioGroupProps) {
+export function RadioGroup({ children, disabled, defaultValue, ...props }: RadioGroupProps) {
   const [selectedValue, setSelectedValue] = useState(defaultValue);
 
   useEffect(() => {
@@ -38,9 +39,7 @@ export function RadioGroup({ disabled, defaultValue, ...props }: RadioGroupProps
         onValueChange={setSelectedValue}
         {...props}
       >
-        <Radio label="Default" value="default" id="r1" />
-        <Radio label="Comfortable" value="comfortable" id="r2" />
-        <Radio label="Compact" value="compact" id="r3" />
+        {children}
       </RadixRadioGroup.Root>
     </form>
   );
