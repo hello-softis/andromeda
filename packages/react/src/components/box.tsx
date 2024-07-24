@@ -3,11 +3,11 @@ import { tv, VariantProps } from 'tailwind-variants';
 import '../index.css';
 
 const boxVariants = tv({
-  base: 'rounded-md bg-shape-secondary border border-solid border-grey-600',
+  base: 'rounded-md bg-grey-600 border border-solid border-shape-tertiary',
   variants: {
     hover: {
-      false: 'hover:bg-shape-secondary',
-      true: 'hover:bg-shape-tertiary'
+      false: 'hover:bg-grey-600',
+      true: 'hover:bg-shape-secondary'
     },
     hasChildren: {
       false: 'w-80 h-80',
@@ -15,7 +15,7 @@ const boxVariants = tv({
     },
     full: {
       false: 'w-80 h-80',
-      true: 'w-full h-full'
+      true: 'w-full h-full flex items-center justify-center'
     }
   }
 })

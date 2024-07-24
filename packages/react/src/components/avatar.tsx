@@ -44,19 +44,28 @@ const textColors = {
 };
 
 export interface AvatarProps extends ComponentProps<typeof Avatar.Root>, VariantProps<typeof avatarVariants> {
-  name: string
-  src: string
-  label?: string
+  name: string;
+  src: string;
+  label?: string;
 }
+
+const getInitials = (name: string) => {
+  const [firstName, lastName] = name.split(' ');
+  return `${firstName?.[0] || ''}${lastName?.[0] || ''}`.toUpperCase();
+};
 
 export function Avatars({ sizes, name, src, theme, label, ...props }: AvatarProps) {
   const outlineColor = themeColors[theme || 'default'];
   const textColor = textColors[theme || 'default'];
-  
+  const fallback = getInitials(name);
+
   return (
     <div className="relative">
       <Avatar.Root {...props} className={avatarVariants({ sizes, theme })}>
         <Avatar.Image className="w-full h-full object-cover rounded-full bg-grey-900" src={src} alt={name} />
+        <Avatar.Fallback className="flex items-center justify-center w-full h-full text-3xl bg-softis-light text-white font-bold" delayMs={800}>
+          {fallback}
+        </Avatar.Fallback>
       </Avatar.Root>
       {label && sizes === 'xl' && (
         <div className={`absolute bottom-[-0.75rem] left-1/2 transform -translate-x-1/2 ${outlineColor} ${textColor} font-bold leading-normal text-xxs text-center px-3 py-1 rounded text-nowrap whitespace-nowrap`}>

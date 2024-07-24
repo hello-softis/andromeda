@@ -24,6 +24,8 @@ const textVariants = tv({
 
 export interface TextProps extends ComponentProps<'p'>, VariantProps<typeof textVariants> {
   children: ReactNode,
+  weights?: 'normal' | 'bold'
+  sizes?: 'xs' | 'sm' | 'md' | 'lg',
   weight?: boolean, 
 }
 

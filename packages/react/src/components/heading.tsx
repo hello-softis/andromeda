@@ -26,7 +26,9 @@ const headingVariants = tv({
 export interface HeadingProps extends ComponentProps<'h2'>, VariantProps<typeof headingVariants> {
   children: ReactNode,
   weight?: boolean, 
-  as?: ElementType
+  as?: ElementType,
+  sizes?: 'sm' | 'md' | 'lg' | 'xl' | '2xl'
+  weights?: 'normal' | 'bold'
 }
 
 export function Heading({ children, sizes, weight, ...props }: HeadingProps) {

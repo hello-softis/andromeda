@@ -29,4 +29,3 @@ export default {
 } as Meta<CheckboxProps>;
 
 export const Default: StoryObj<CheckboxProps> = {};
-

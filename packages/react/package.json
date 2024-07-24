@@ -38,6 +38,9 @@
     "@radix-ui/react-switch": "^1.1.0",
     "@stitches/react": "^1.2.8",
     "hugeicons-react": "^0.2.0",
-    "tailwind-variants": "^0.2.1"
+    "lucide-react": "^0.414.0",
+    "tailwind-merge": "^2.4.0",
+    "tailwind-variants": "^0.2.1",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
