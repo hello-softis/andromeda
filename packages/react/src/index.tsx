@@ -14,3 +14,6 @@ export * from './components/spinner'
 export * from './components/tag/tag'
 export * from './components/tag/tagDelete'
 export * from './components/switch'
+export * from './components/radio/radio'
+export * from './components/radio/radioGroup'
+
