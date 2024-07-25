@@ -1,4 +1,12 @@
 {
   "extends": "@andromeda/ts-config/react",
   "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
 }

@@ -37,7 +37,7 @@ export function InputText({ children, prefix, disabled, trailingIcon, invalid, l
       <input 
         {...props} 
         type="text" 
-        className='peer bg-transparent font-sans text-white border-0 w-full focus:outline-0 placeholder:text-grey-300 disabled:cursor-not-allowed' 
+        className='peer bg-transparent font-sans text-white border-0 w-full focus:outline-0 placeholder:font-sans placeholder:text-grey-300 disabled:cursor-not-allowed' 
         disabled={disabled === true}
       />
       {trailingIcon ? <div className={`mx-2 ${iconColor} group-focus-within:text-softis-mid`}>{trailingIcon}</div> : null}
