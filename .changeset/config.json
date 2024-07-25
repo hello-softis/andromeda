@@ -7,5 +7,5 @@
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@andromeda-ui/docs"]
+  "ignore": ["@andromeda-softis/docs"]
 }
