@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { BreadCrumb, BreadCrumbsProps } from '@andromeda/react';
+import { BreadCrumb, BreadCrumbsProps, BreadCrumbItem } from '@andromeda/react';
 
 export default {
   title: 'Form/Breadcrumb/BreadcrumbContainer',
@@ -22,11 +22,25 @@ export default {
 export const Default: StoryObj<BreadCrumbsProps> = {
   args: {
     disabled: false
-  }
+  },
+  render: (args) => (
+    <BreadCrumb {...args}>
+      <BreadCrumbItem link="/component">Component</BreadCrumbItem>
+      <BreadCrumbItem link="/form">Form</BreadCrumbItem>
+      <BreadCrumbItem link="/breadcrumb" isCurrentPage={true}>Breadcrumb</BreadCrumbItem>
+    </BreadCrumb>
+  )
 };
 
 export const Inactive: StoryObj<BreadCrumbsProps> = {
   args: {
     disabled: true
-  }
+  },
+  render: (args) => (
+    <BreadCrumb {...args}>
+      <BreadCrumbItem link="/component">Component</BreadCrumbItem>
+      <BreadCrumbItem link="/form">Form</BreadCrumbItem>
+      <BreadCrumbItem link="/breadcrumb" isCurrentPage={true}>Breadcrumb</BreadCrumbItem>
+    </BreadCrumb>
+  )
 };
