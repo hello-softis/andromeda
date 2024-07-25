@@ -1,4 +1,4 @@
-# @andromeda/tokens
+# @andromeda-ui/eslint-config
 
 ## 1.1.0
 
@@ -6,9 +6,3 @@
 
 - fix required packages to turborepo
 - update import packages to monorepo
-
-## 3.0.0
-
-### Major Changes
-
-- Testando
