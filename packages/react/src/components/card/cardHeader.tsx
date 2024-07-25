@@ -1,4 +1,4 @@
-import { Heading } from '../../heading'
+import { Heading } from '../heading'
 import type { ComponentProps, ReactNode } from "react";
 
 export interface CardHeaderProps extends ComponentProps<'div'> {

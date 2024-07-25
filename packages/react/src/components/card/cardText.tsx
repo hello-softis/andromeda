@@ -1,6 +1,4 @@
-import { Card } from "./card";
-import { CardContent } from "./cardContent";
-import { Text } from "../../text"
+import { Text } from "../text"
 import type { ReactNode } from "react";
 
 export interface CardTextProps {

@@ -25,12 +25,12 @@ export const Default: StoryObj<CardTextProps> = {
     children: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium repudiandae maxime, in similique iste. Aspernatur saepe ipsam eaque dolore, molestias repudiandae adipisci sit odio laudantium fuga consequuntur incidunt quis?'
   },
   render: (args) => (
-    <Box full {...args}>
-      <Card style={{ maxWidth: '500px' }}>
+    <div style={{ background: 'rgb(41, 41, 46)', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}>
+      <Card style={{ maxWidth: '500px', width: '100%' }}>
         <CardContent>
           <CardText>{args.children}</CardText>
         </CardContent>
       </Card>
-    </Box>
+    </div>
   )
 };
