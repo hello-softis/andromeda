@@ -6,6 +6,8 @@
 
 Andromeda is the Design System of Softis, designed to create cohesive and efficient user interfaces. With reusable components, clear guidelines, and comprehensive documentation, Andromeda helps build digital products with consistency and quality.
 
+---
+
 ## Badges
 
 ![Version](https://img.shields.io/badge/Version-2.0.0-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
@@ -16,6 +18,8 @@ Andromeda is the Design System of Softis, designed to create cohesive and effici
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Status)
 
+---
+
 ## Table of Contents
 
 - [Prerequisites and How to Run the App](#prerequisites-and-how-to-run-the-app)
@@ -24,6 +28,8 @@ Andromeda is the Design System of Softis, designed to create cohesive and effici
 - [Technologies Used](#technologies-used)
 - [Author](#author)
 - [License](#license)
+
+---
 
 ## Prerequisites and How to Run the App
 
@@ -144,6 +150,8 @@ export default {
 ```
 
 With this configuration, you can use Andromeda's colors directly in Tailwind CSS classes, ensuring visual consistency and leveraging the benefits of a well-defined design system.
+
+---
 
 ## Technologies Used
 
