@@ -1,6 +1,6 @@
 {
-  "name": "@andromeda-ui/react",
-  "version": "1.1.0",
+  "name": "@andromeda-softis/react",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -16,9 +16,9 @@
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
-    "@andromeda-ui/eslint-config": "*",
-    "@andromeda-ui/tokens": "*",
-    "@andromeda-ui/ts-config": "*",
+    "@andromeda-softis/eslint-config": "*",
+    "@andromeda-softis/tokens": "*",
+    "@andromeda-softis/ts-config": "*",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",

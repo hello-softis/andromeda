@@ -1,6 +1,6 @@
 {
-  "name": "@andromeda-ui/tokens",
-  "version": "1.1.0",
+  "name": "@andromeda-softis/tokens",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -15,8 +15,8 @@
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
-    "@andromeda-ui/ts-config": "*",
-    "@andromeda-ui/eslint-config": "*",
+    "@andromeda-softis/ts-config": "*",
+    "@andromeda-softis/eslint-config": "*",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }

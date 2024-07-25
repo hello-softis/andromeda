@@ -55,14 +55,14 @@ Andromeda can be easily integrated with Tailwind CSS, allowing you to use the co
 First, install the tokens package:
 
 ```bash
-npm install @andromeda/tokens
+npm install @andromeda-softis/tokens
 ```
 
 Next, configure the tailwind.config.js file to add Andromeda's colors:
 
 ```bash
 /** @type {import('tailwindcss').Config} */
-import * as tokens from '@andromeda/tokens';
+import * as tokens from '@andromeda-softis/tokens';
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],

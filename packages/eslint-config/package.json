@@ -1,7 +1,7 @@
 {
-  "name": "@andromeda-ui/eslint-config",
+  "name": "@andromeda-softis/eslint-config",
   "author": "Softis",
   "private": true,
   "main": "index.ts",
-  "version": "1.1.0"
+  "version": "1.0.0"
 }
