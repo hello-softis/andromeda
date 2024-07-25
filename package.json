@@ -1,5 +1,5 @@
 {
-  "name": "andromeda-softis",
+  "name": "andromeda-ui",
   "private": true,
   "scripts": {
     "dev": "turbo run dev",
