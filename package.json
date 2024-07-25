@@ -1,5 +1,5 @@
 {
-  "name": "andromeda-softis",
+  "name": "@hello.softis/andromeda",
   "private": true,
   "scripts": {
     "dev": "turbo run dev",
