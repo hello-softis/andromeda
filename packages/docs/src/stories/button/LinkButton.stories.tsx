@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Link, LinkProps } from '@andromeda-ui/react';
+import { Link, LinkProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Form/Button/LinkButton',

@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Spinner, SpinnerProps } from '@andromeda-ui/react';
+import { Spinner, SpinnerProps } from '@andromeda-softis/react'
 
 const colorOptions = [
   'softis-light', 

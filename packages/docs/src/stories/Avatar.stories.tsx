@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Avatars, AvatarProps } from '@andromeda-ui/react';
+import { Avatars, AvatarProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Data Display/Avatar',

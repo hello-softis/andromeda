@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { TagDelete, TagDeleteProps } from '@andromeda-ui/react';
+import { TagDelete, TagDeleteProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Data Display/Tag/TagDelete',

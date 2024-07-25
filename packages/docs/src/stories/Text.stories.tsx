@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Text, TextProps } from '@andromeda-ui/react';
+import { Text, TextProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Typography/Text',

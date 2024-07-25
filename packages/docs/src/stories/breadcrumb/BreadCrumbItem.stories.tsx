@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react';
 import { Breadcrumb } from "@chakra-ui/breadcrumb"
-import { BreadCrumbItem, BreadCrumbsItemProps } from '@andromeda-ui/react';
+import { BreadCrumbItem, BreadCrumbsItemProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Form/Breadcrumb/BreadcrumbItem',

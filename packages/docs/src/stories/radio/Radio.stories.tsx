@@ -1,7 +1,7 @@
 import '../../index.css';
 import * as RadixRadioGroup from '@radix-ui/react-radio-group';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Radio, RadioProps } from '@andromeda-ui/react';
+import { Radio, RadioProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Form/Radio/Radio',

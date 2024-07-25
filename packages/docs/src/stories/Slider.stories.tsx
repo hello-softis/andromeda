@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Slider, SliderProps } from '@andromeda-ui/react';
+import { Slider, SliderProps } from '@andromeda-softis/react'
 export default {
   title: 'Form/Slider',
   component: Slider,

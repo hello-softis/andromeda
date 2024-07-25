@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Heading, HeadingProps } from '@andromeda-ui/react';
+import { Heading, HeadingProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Typography/Heading',

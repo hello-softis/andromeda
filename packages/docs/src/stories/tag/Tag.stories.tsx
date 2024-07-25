@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Tag, TagProps } from '@andromeda-ui/react';
+import { Tag, TagProps } from '@andromeda-softis/react'
 
 export default {
   title: 'Data Display/Tag/Tag',
