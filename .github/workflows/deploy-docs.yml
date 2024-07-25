@@ -23,7 +23,7 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          TURBO_TOKEN: RE0tnRN8Xj9I9p8sixEbNZcr
           TURBO_TEAM: softis
 
       - name: Deploy storybook
