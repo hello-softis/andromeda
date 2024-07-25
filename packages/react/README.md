@@ -1,4 +1,4 @@
-# Design System Tokens used by Softis
+# UI Components used by Softis
 
 ## Table of Contents
 
