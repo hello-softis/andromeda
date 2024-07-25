@@ -1,27 +1,10 @@
-# <span style="color: #9956F6;">Andromeda</span>
-
-<div align="center">
-  <img src="https://github.com/hello-softis/andromeda/blob/main/public/logo.svg" width="500px" height="500px" />
-</div>
-
-Andromeda is the Design System of Softis, designed to create cohesive and efficient user interfaces. With reusable components, clear guidelines, and comprehensive documentation, Andromeda helps build digital products with consistency and quality.
-
-## Badges
-
-![Version](https://img.shields.io/badge/Version-0.0.1-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
-![Update](https://img.shields.io/badge/Update-July%202024-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Update)
-![License](https://img.shields.io/badge/License-Commercial-black?style=for-the-badge&logo=license&logoColor=white&color=black&labelColor=black&label=License)
-
-## Project Status
-
-![Status](https://img.shields.io/badge/Status-In%20Development-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Status)
+# Design System Tokens used by Softis
 
 ## Table of Contents
 
 - [Prerequisites and How to Run the App](#prerequisites-and-how-to-run-the-app)
 - [How to use](#how-to-use-andromeda)
 - [Integration with Tailwind](#integration-with-tailwind)
-- [Technologies Used](#technologies-used)
 - [Author](#author)
 - [License](#license)
 
@@ -59,8 +42,8 @@ Here’s an example of how you might import and use tokens in a CSS-in-JS soluti
 import * as tokens from '@hello.softis/andromeda-tokens';
 
 const styles = {
-  color: tokens.twColors.primary,
-  fontSize: tokens.fontSizes.large,
+  color: tokens.twColors.softis-mid,
+  fontSize: tokens.fontSizes.lg,
 };
 
 function App() {
@@ -107,7 +90,6 @@ npm run dev
 
 Feel free to let me know if there are any other changes you need!
 
-```
 
 ## Integration with Tailwind
 
@@ -153,4 +135,4 @@ Developed by [Softis©](https://github.com/hello-softis). Get in touch!
 
 ## License
 
-This project is licensed under a closed license. See the [LICENSE](LICENSE.md) file for more details.
+This project is licensed under a closed license. See the [LICENSE](https://github.com/hello-softis/andromeda?tab=License-1-ov-file) file for more details.
