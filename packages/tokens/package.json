@@ -9,6 +9,9 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src/**/*.ts* --fix"
   },
+  "publishConfig": {
+    "access": "public"
+  },  
   "keywords": [],
   "author": "Softis",
   "devDependencies": {

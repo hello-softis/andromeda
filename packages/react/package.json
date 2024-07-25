@@ -10,6 +10,9 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix"
   },
+  "publishConfig": {
+    "access": "public"
+  },  
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
