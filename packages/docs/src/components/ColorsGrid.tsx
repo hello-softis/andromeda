@@ -1,4 +1,4 @@
-import { colors } from '@andromeda/tokens'
+import { colors } from '@andromeda-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

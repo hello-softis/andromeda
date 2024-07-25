@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Box, Card, CardContent, CardText, CardTextProps } from '@andromeda/react';
+import { Box, Card, CardContent, CardText, CardTextProps } from '@andromeda-ui/react';
 import '../../index.css'
 
 export default {

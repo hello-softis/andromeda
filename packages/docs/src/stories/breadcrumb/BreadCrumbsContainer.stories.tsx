@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { BreadCrumb, BreadCrumbsProps, BreadCrumbItem } from '@andromeda/react';
+import { BreadCrumb, BreadCrumbsProps, BreadCrumbItem } from '@andromeda-ui/react';
 
 export default {
   title: 'Form/Breadcrumb/BreadcrumbContainer',

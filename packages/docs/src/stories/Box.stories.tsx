@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps } from '@andromeda/react';
+import { Box, BoxProps } from '@andromeda-ui/react';
 
 export default {
   title: 'Layout/Box',

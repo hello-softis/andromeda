@@ -1,5 +1,5 @@
 {
-  "extends": "@andromeda/ts-config/react.json",
+  "extends": "@andromeda-ui/ts-config/react.json",
   "include": ["src"],
   "compilerOptions": {
     "baseUrl": ".",
