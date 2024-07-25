@@ -1,8 +1,9 @@
+# <span style="color: #9956F6;">Andromeda</span>
+
 <div align="center">
   <img src="https://github.com/hello-softis/andromeda/blob/main/public/logo.svg" width="500px" height="500px" />
 </div>
 
-# <span style="color: #9956F6;">Andromeda</span>
 
 Andromeda is the Design System of Softis, designed to create cohesive and efficient user interfaces. With reusable components, clear guidelines, and comprehensive documentation, Andromeda helps build digital products with consistency and quality.
 

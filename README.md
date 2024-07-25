@@ -8,7 +8,7 @@ Andromeda is the Design System of Softis, designed to create cohesive and effici
 
 ## Badges
 
-![Version](https://img.shields.io/badge/Version-0.0.1-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
+![Version](https://img.shields.io/badge/Version-2.0.0-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
 ![Update](https://img.shields.io/badge/Update-July%202024-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Update)
 ![License](https://img.shields.io/badge/License-Commercial-black?style=for-the-badge&logo=license&logoColor=white&color=black&labelColor=black&label=License)
 
