@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Card, Text, CardContent, CardText, CardHeader, CardHeaderProps } from '@andromeda-softis/react'
+import { Card, Text, CardContent, CardText, CardHeader, CardHeaderProps } from '@hello.softis/andromeda-react'
 import { GearIcon } from '@radix-ui/react-icons'
 import '../../index.css'
 

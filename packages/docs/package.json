@@ -1,5 +1,5 @@
 {
-  "name": "@andromeda-softis/docs",
+  "name": "@hello.softis/andromeda-docs",
   "private": true,
   "version": "3.19.0",
   "type": "module",
@@ -10,9 +10,9 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
-    "@andromeda-softis/eslint-config": "*",
-    "@andromeda-softis/react": "*",
-    "@andromeda-softis/tokens": "*",
+    "@hello.softis/andromeda-react": "*",
+    "@hello.softis/andromeda-eslint-config": "*",
+    "@hello.softis/andromeda-tokens": "*",
     "@chakra-ui/breadcrumb": "^2.2.0",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-radio-group": "^1.2.0",

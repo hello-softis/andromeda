@@ -1,4 +1,4 @@
-import { colors } from '@andromeda-softis/tokens'
+import { colors } from '@hello.softis/andromeda-tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

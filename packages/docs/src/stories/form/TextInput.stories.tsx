@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { InputText, InputTextProps } from '@andromeda-softis/react'
+import { InputText, InputTextProps } from '@hello.softis/andromeda-react'
 import { LockClosedIcon, EyeClosedIcon, EyeOpenIcon } from '@radix-ui/react-icons'
 
 LockClosedIcon.displayName = 'LockClosedIcon';

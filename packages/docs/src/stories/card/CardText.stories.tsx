@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Box, Card, CardContent, CardText, CardTextProps } from '@andromeda-softis/react'
+import { Box, Card, CardContent, CardText, CardTextProps } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Surfaces/Card/CardText',

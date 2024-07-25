@@ -1,5 +1,5 @@
 {
-  "name": "@andromeda-softis/eslint-config",
+  "name": "@hello.softis/andromeda-eslint-config",
   "author": "Softis",
   "private": true,
   "main": "index.ts",

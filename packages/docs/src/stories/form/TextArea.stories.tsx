@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { TextArea, TextAreaProps, Box, Text } from '@andromeda-softis/react'
+import { TextArea, TextAreaProps, Box, Text } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/TextArea',

@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { RadioGroup, RadioGroupProps, Radio } from '@andromeda-softis/react'
+import { RadioGroup, RadioGroupProps, Radio } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/Radio/RadioGroup',

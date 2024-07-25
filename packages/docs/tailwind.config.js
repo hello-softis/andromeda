@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import * as tokens from '@andromeda-softis/tokens';
+import * as tokens from '@hello.softis/andromeda-tokens';
 
 export default {
   content: ['../react/src/**/*.{js,ts,jsx,tsx}','./src/**/*.{js,ts,jsx,tsx,mdx}'],

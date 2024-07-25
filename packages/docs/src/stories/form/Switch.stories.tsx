@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Switch, SwitchProps } from '@andromeda-softis/react'
+import { Switch, SwitchProps } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/Switch',

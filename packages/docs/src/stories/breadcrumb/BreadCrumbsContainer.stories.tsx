@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { BreadCrumb, BreadCrumbsProps, BreadCrumbItem } from '@andromeda-softis/react'
+import { BreadCrumb, BreadCrumbsProps, BreadCrumbItem } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/Breadcrumb/BreadcrumbContainer',

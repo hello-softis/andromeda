@@ -1,6 +1,6 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { ButtonEmptyState, ButtonEmptyProps } from '@andromeda-softis/react'
+import { ButtonEmptyState, ButtonEmptyProps } from '@hello.softis/andromeda-react'
 import { PlusIcon } from '@radix-ui/react-icons'
 
 PlusIcon.displayName = 'PlusIcon';

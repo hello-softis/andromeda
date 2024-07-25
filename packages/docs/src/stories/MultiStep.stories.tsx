@@ -1,6 +1,6 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { MultiStep, MultiStepProps, Box } from '@andromeda-softis/react'
+import { MultiStep, MultiStepProps, Box } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Navigation/MultiStep',

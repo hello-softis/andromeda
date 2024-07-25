@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps } from '@andromeda-softis/react'
+import { Box, BoxProps } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Layout/Box',
