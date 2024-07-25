@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/logo.svg" width="500px" height="500px" />
+  <img src="https://github.com/hello-softis/andromeda/blob/main/public/logo.svg" width="500px" height="500px" />
 </div>
 
 # <span style="color: #9956F6;">Andromeda</span>
@@ -107,6 +107,8 @@ npm run dev
 
 Feel free to let me know if there are any other changes you need!
 
+```
+
 ## Integration with Tailwind
 
 Andromeda can be easily integrated with Tailwind CSS, allowing you to use the colors defined in the Design System directly in your Tailwind utility classes. To do this, you need to configure your project's tailwind.config.js file to import the colors from the Andromeda tokens package.
@@ -144,23 +146,6 @@ export default {
 ```
 
 With this configuration, you can use Andromeda's colors directly in Tailwind CSS classes, ensuring visual consistency and leveraging the benefits of a well-defined design system.
-
-## Technologies Used
-
-![Storybook](./public/readme/languages/storybook.svg "Storybook")
-![React](./public/readme/languages/react-ts.svg "React")
-![Tailwind](./public/readme/languages/tailwind.svg "Tailwind CSS")
-![TypeScript](./public/readme/languages/typescript.svg "TypeScript")
-![Turborepo](./public/readme/languages/turborepo.svg "Turborepo")
-![npm](./public/readme/languages/npm.svg "npm")
-![others](./public/readme/languages/symbols.svg "Others")
-
-#### Others
-- [Radix UI](https://radix-ui.com/ "Radix")
-- [Chakra-UI](https://chakra-ui.com/ "Chakra")
-- [Stitches](https://stitches.dev/ "Stitches")
-- [Tailwind Variants](https://www.tailwind-variants.org/ "Tailwind Variants")
-- [HugeIcons](https://hugeicons.com/ "HugeIcons")
 
 ## Author
 

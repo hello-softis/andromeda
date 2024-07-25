@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/logo.svg" width="500px" height="500px" />
+  <img src="https://github.com/hello-softis/andromeda/blob/main/public/logo.svg" width="500px" height="500px" />
 </div>
 
 # <span style="color: #9956F6;">Andromeda</span>
@@ -8,7 +8,7 @@ Andromeda is the Design System of Softis, designed to create cohesive and effici
 
 ## Badges
 
-![Version](https://img.shields.io/badge/Version-0.0.1-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
+![Version](https://img.shields.io/badge/Version-1.0.0-black?style=for-the-badge&logo=version&logoColor=white&color=black&labelColor=black&label=Version)
 ![Update](https://img.shields.io/badge/Update-July%202024-black?style=for-the-badge&logo=github&logoColor=white&color=black&labelColor=black&label=Update)
 ![License](https://img.shields.io/badge/License-Commercial-black?style=for-the-badge&logo=license&logoColor=white&color=black&labelColor=black&label=License)
 
@@ -46,7 +46,6 @@ First, add Andromeda as a dependency in your project. Run the following commands
 
 ```bash
 npm install @hello.softis/andromeda-tokens
-npm install @hello.softis/andromeda-react
 ```
 
 ### 2. Configure Design Tokens
@@ -73,39 +72,6 @@ function App() {
 
 export default App;
 ```
-
-### 3. Use React Components
-
-The `@hello.softis/andromeda-react` package includes a set of pre-configured components that follow the Design System guidelines. To use them, import the desired components and include them in your project:
-
-```javascript
-import { Button, Card } from '@hello.softis/andromeda-react';
-
-function App() {
-  return (
-    <div>
-      <Card>
-        <h1>Welcome to Andromeda</h1>
-        <Button>Click Me</Button>
-      </Card>
-    </div>
-  );
-}
-
-export default App;
-```
-
-### 4. Start Your Project
-
-After setting up the dependencies and integrating the tokens and components, start your project to see the changes in action:
-
-```bash
-npm run dev
-```
-
----
-
-Feel free to let me know if there are any other changes you need!
 
 ## Integration with Tailwind
 
@@ -144,23 +110,6 @@ export default {
 ```
 
 With this configuration, you can use Andromeda's colors directly in Tailwind CSS classes, ensuring visual consistency and leveraging the benefits of a well-defined design system.
-
-## Technologies Used
-
-![Storybook](./public/readme/languages/storybook.svg "Storybook")
-![React](./public/readme/languages/react-ts.svg "React")
-![Tailwind](./public/readme/languages/tailwind.svg "Tailwind CSS")
-![TypeScript](./public/readme/languages/typescript.svg "TypeScript")
-![Turborepo](./public/readme/languages/turborepo.svg "Turborepo")
-![npm](./public/readme/languages/npm.svg "npm")
-![others](./public/readme/languages/symbols.svg "Others")
-
-#### Others
-- [Radix UI](https://radix-ui.com/ "Radix")
-- [Chakra-UI](https://chakra-ui.com/ "Chakra")
-- [Stitches](https://stitches.dev/ "Stitches")
-- [Tailwind Variants](https://www.tailwind-variants.org/ "Tailwind Variants")
-- [HugeIcons](https://hugeicons.com/ "HugeIcons")
 
 ## Author
 
