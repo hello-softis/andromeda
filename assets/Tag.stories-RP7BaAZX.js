@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-Nms4Y4qS.js";/* empty css              */import{r as m}from"./index-CllzlCCi.js";import"./index-BwDkhjyp.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-DxjWwZXO.js";import"./extends-CF3RwP-h.js";const b={title:"Data Display/Tag/Tag",component:m,args:{children:"LABEL",sizes:"md",disable:!1},argTypes:{sizes:{control:{type:"inline-radio"},options:["sm","md","lg"]},disable:{control:{type:"boolean"}}},decorators:[p=>s.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh"},children:s.jsx(p,{})})]},e={},r={args:{disable:!0}};var t,a,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"{}",...(o=(a=e.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};var i,n,c;r.parameters={...r.parameters,docs:{...(i=r.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    disable: true
+  }
+}`,...(c=(n=r.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};const h=["Default","Inactive"];export{e as Default,r as Inactive,h as __namedExportsOrder,b as default};
