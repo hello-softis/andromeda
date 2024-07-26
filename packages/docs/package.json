@@ -1,7 +1,7 @@
 {
   "name": "@hello.softis/andromeda-docs",
   "private": true,
-  "version": "3.19.0",
+  "version": "3.20.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
