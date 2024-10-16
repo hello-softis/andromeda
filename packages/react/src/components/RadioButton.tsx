@@ -2,7 +2,7 @@
 
 import { type ReactNode, type ComponentProps, useState, useEffect } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
-import { Text } from './Text'
+import { Text } from './text'
 import * as RadioGroup from '@radix-ui/react-radio-group'
 
 const radioButtonVariants = tv({

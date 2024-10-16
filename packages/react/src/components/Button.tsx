@@ -1,7 +1,7 @@
 import type { ReactNode, ComponentProps } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 import { forwardRef } from 'react'
-import { Spinner } from './Spinner'
+import { Spinner } from './spinner'
 
 const buttonVariants = tv({
   base: 'flex items-center justify-center rounded-md transition-all focus:shadow-md w-auto font-bold gap-3',
