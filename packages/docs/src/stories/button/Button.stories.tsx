@@ -1,55 +1,29 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { Button, ButtonProps } from '@hello.softis/andromeda-react'
-import { PlusIcon, GearIcon, DoubleArrowUpIcon } from '@radix-ui/react-icons'
-
-PlusIcon.displayName = 'PlusIcon';
-GearIcon.displayName = 'GearIcon';
-DoubleArrowUpIcon.displayName = 'DoubleArrowUpIcon';
-
-const iconMap = {
-  noIcon: '',
-  plus: <PlusIcon />,
-  gear: <GearIcon />,
-  doubleArrowUp: <DoubleArrowUpIcon />,
-};
 
 export default {
   title: 'Form/Button/Button',
   component: Button,
   args: {
     children: 'LABEL',
-    colors: 'primary',
-    sizes: 'lg',
+    color: 'primary',
+    size: 'lg',
     full: false,
-    disable: false,
-    loading: false,
-    leadingIcon: iconMap['noIcon'],
-    trailingIcon: iconMap['noIcon']
+    disabled: false,
   },
   argTypes: {
     children: { control: 'text' },
-    colors: {
+    color: {
       control: { type: 'inline-radio' },
       options: ['primary', 'secondary', 'tertiary', 'danger'],
     },
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
-      options: ['xs', 'sm', 'md', 'lg', 'xlg'],
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
-    disable: { control: 'boolean' },
     full: { control: 'boolean' },
-    loading: { control: 'boolean' },
-    leadingIcon: {
-      control: { type: 'select' },
-      options: Object.keys(iconMap),
-      mapping: iconMap,
-    },
-    trailingIcon: {
-      control: { type: 'select' },
-      options: Object.keys(iconMap),
-      mapping: iconMap,
-    },
+    disabled: { control: 'boolean' },
   },
   decorators: [
     (Story) => (
@@ -64,19 +38,19 @@ export const Primary: StoryObj<ButtonProps> = {}
 
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    colors: 'secondary',
+    color: 'secondary',
   }
 }
 
 export const Tertiary: StoryObj<ButtonProps> = {
   args: {
-    colors: 'tertiary',
+    color: 'tertiary',
   }
 }
 
 export const Danger: StoryObj<ButtonProps> = {
   args: {
-    colors: 'danger',
+    color: 'danger',
   }
 }
 
@@ -88,13 +62,7 @@ export const Full: StoryObj<ButtonProps> = {
 
 export const Disable: StoryObj<ButtonProps> = {
   args: {
-    disable: true,
-  }
-}
-
-export const Loading: StoryObj<ButtonProps> = {
-  args: {
-    loading: true
+    disabled: true,
   }
 }
 

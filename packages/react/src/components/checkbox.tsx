@@ -1,41 +1,77 @@
-import * as Checkbox from '@radix-ui/react-checkbox';
-import { CheckIcon } from '@radix-ui/react-icons';
-import type { ComponentProps } from 'react';
-import { tv, VariantProps } from 'tailwind-variants';
-import '../index.css';
+import type { ReactNode, ComponentProps } from 'react'
+import { tv, VariantProps } from 'tailwind-variants'
+import * as Checkbox from '@radix-ui/react-checkbox'
 
 const checkboxVariants = tv({
-  base: 'bg-grey-900 rounded-sm leading-[0] cursor-pointer overflow-hidden box-border flex justify-center items-center border-2 border-solid border-grey-300 focus:border-2 focus:border-solid focus:border-softis-mid group aria-checked:bg-softis-light',
+  base: 'bg-grey-800 rounded-sm leading-[0] cursor-pointer overflow-hidden box-border flex justify-center items-center border-2 border-solid border-grey-300 focus:border-2 focus:border-solid focus:border-softis-mid group aria-checked:bg-softis-light aria-checked:border-softis-light',
   variants: {
-    sizes: {
-      sm: 'w-5 h-5',
+    size: {
+      sm: 'w-4 h-4',
       md: 'w-6 h-6',
-      lg: 'w-8 h-8'
-    }
-  }
-});
+      lg: 'w-8 h-8',
+    },
+    disabled: {
+      true: 'opacity-50 pointer-events-none',
+      false: '',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
-const indicatorVariants = tv({
+const checkboxIndicatorVariants = tv({
   variants: {
-    sizes: {
+    size: {
       sm: 'w-3 h-3',
       md: 'w-4 h-4',
-      lg: 'w-5 h-5'
-    }
-  }
-});
+      lg: 'w-5 h-5',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
-export interface CheckboxProps extends ComponentProps<typeof Checkbox.Root>, VariantProps<typeof checkboxVariants> {}
+export interface CheckboxProps
+  extends VariantProps<typeof Checkbox.Root>,
+    VariantProps<typeof checkboxVariants> {
+  children: ReactNode
+  className?: string
+  size?: keyof typeof checkboxVariants.variants.size
+}
 
-export function CheckBox({ sizes, ...props }: CheckboxProps) {
+export function CheckboxRoot({
+  children,
+  className,
+  disabled,
+  size,
+  ...props
+}: ComponentProps<typeof Checkbox.Root> & CheckboxProps) {
   return (
     <Checkbox.Root
       {...props}
-      className={checkboxVariants({sizes})}
+      disabled={disabled}
+      className={`${checkboxVariants({ size, disabled })} ${className}`}
     >
-      <Checkbox.CheckboxIndicator asChild className={indicatorVariants({ sizes })}>
-        <CheckIcon className='text-white font-fold' />
-      </Checkbox.CheckboxIndicator>
+      {children}
     </Checkbox.Root>
-  );
+  )
+}
+
+export function CheckboxIndicator({
+  className,
+  size,
+  children,
+  ...props
+}: ComponentProps<typeof Checkbox.Indicator> & CheckboxProps) {
+  return (
+    <Checkbox.Indicator
+      asChild
+      className={`${checkboxIndicatorVariants({ size })} ${className}`}
+      {...props}
+    >
+      {children}
+    </Checkbox.Indicator>
+  )
 }

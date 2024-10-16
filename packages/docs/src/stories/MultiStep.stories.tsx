@@ -7,19 +7,17 @@ export default {
   component: MultiStep,
   args: {
     size: 4,
-    currentStep: 1
+    step: 1,
   },
   argTypes: {
     size: { control: 'number' },
-    currentStep: { control: 'number' }
+    step: { control: 'number' }
   },
   decorators: [
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
-        <Box hover={false} hasChildren={true} full={true}>
-          <div className='p-3'>
-            <Story />
-          </div>
+        <Box className='w-80 p-4'>
+          <Story />
         </Box>
       </div>
     )

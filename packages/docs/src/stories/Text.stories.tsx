@@ -7,16 +7,17 @@ export default {
   component: Text,
   args: {
     children: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque debitis, officia illo repudiandae, tenetur praesentium tempore recusandae eius, blanditiis sequi! Pariatur error eligendi quam modi quibusdam molestias eaque quo.',
-    sizes: 'md',
-    weight: false,
+    size: 'base',
+    weight: 'normal',
   },
   argTypes: {
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
-      options: ['xs', 'sm', 'md', 'lg']
+      options: ['xs', 'sm', 'base', 'lg']
     },
     weight: {
-      control: { type: 'boolean' },
+      control: { type: 'inline-radio' },
+      options: ['normal', 'medium', 'semibold', 'bold']
     }
   },
   decorators: [

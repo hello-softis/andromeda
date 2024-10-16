@@ -1,27 +1,27 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Link, LinkProps } from '@hello.softis/andromeda-react'
+import { ButtonLink, ButtonLinkProps } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/Button/LinkButton',
-  component: Link,
+  component: ButtonLink,
   args: {
     children: 'Label',
-    colors: 'primary',
-    sizes: 'md',
-    disable: false
+    color: 'primary',
+    size: 'md',
+    disabled: false
   },
   argTypes: {
     children: { control: 'text' },
-    colors: {
+    color: {
       control: { type: 'inline-radio' },
       options: ['primary', 'secondary', 'tertiary'],
     },
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
       options: ['xs', 'sm', 'md', 'lg'],
     },
-    disable: { control: 'boolean' },
+    disabled: { control: 'boolean' },
   },
   decorators: [
     (Story) => (
@@ -30,24 +30,24 @@ export default {
       </div>
     ),
   ],
-} as Meta<LinkProps>;
+} as Meta<ButtonLinkProps>;
 
-export const Primary: StoryObj<LinkProps> = {}
+export const Primary: StoryObj<ButtonLinkProps> = {}
 
-export const Secondary: StoryObj<LinkProps> = {
+export const Secondary: StoryObj<ButtonLinkProps> = {
   args: {
-    colors: 'secondary'
+    color: 'secondary'
   }
 }
 
-export const Tertiary: StoryObj<LinkProps> = {
+export const Tertiary: StoryObj<ButtonLinkProps> = {
   args: {
-    colors: 'tertiary'
+    color: 'tertiary'
   }
 }
 
-export const Disable: StoryObj<LinkProps> = {
+export const Disabled: StoryObj<ButtonLinkProps> = {
   args: {
-    disable: true
+    disabled: true
   }
 }

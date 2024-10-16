@@ -7,15 +7,15 @@ export default {
   component: Tag,
   args: {
     children: 'LABEL',
-    sizes: 'md',
-    disable: false,
+    size: 'md',
+    disabled: false,
   },
   argTypes: {
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
       options: ['sm', 'md', 'lg'],
     },
-    disable: {
+    disabled: {
       control: { type: 'boolean' },
     },
 
@@ -31,8 +31,8 @@ export default {
 
 export const Default: StoryObj<TagProps> = {}
 
-export const Inactive: StoryObj<TagProps> = {
+export const Disabled: StoryObj<TagProps> = {
   args: {
-    disable: true,
+    disabled: true,
   },
 }

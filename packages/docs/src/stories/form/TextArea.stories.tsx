@@ -6,7 +6,7 @@ export default {
   title: 'Form/TextArea',
   component: TextArea,
   args: {
-    placeholder: '',
+    placeholder: 'Write your thoughts here',
     disabled: false
   },
   argTypes: {
@@ -16,9 +16,9 @@ export default {
   decorators: [
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
-        <Box hover={false} hasChildren={true} full={true}>
+        <Box className='w-80'>
           <div className='p-3 flex flex-col gap-2'>
-            <Text sizes='sm' weight={true}>Observations</Text>
+            <Text size='sm' weight='bold'>Observations</Text>
             <Story/>
           </div>
         </Box>
@@ -27,11 +27,7 @@ export default {
   ],
 } as Meta<TextAreaProps>;
 
-export const Default: StoryObj<TextAreaProps> = {
-  args: {
-    placeholder: 'Enter your email'
-  }
-}
+export const Default: StoryObj<TextAreaProps> = {}
 
 export const Disabled: StoryObj<TextAreaProps> = {
   args: {

@@ -1,16 +1,12 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
 import { ButtonIcon, ButtonIconProps } from '@hello.softis/andromeda-react'
-import { PlusIcon, GearIcon, DoubleArrowUpIcon } from '@radix-ui/react-icons'
-
-PlusIcon.displayName = 'PlusIcon';
-GearIcon.displayName = 'GearIcon';
-DoubleArrowUpIcon.displayName = 'DoubleArrowUpIcon';
+import { PlusSignIcon, Settings02Icon, ArrowDownDoubleIcon } from '@houstonicons/react'
 
 const iconMap = {
-  plus: <PlusIcon />,
-  gear: <GearIcon />,
-  doubleArrowUp: <DoubleArrowUpIcon />,
+  plus: <PlusSignIcon color="white" />,
+  gear: <Settings02Icon color="white" />,
+  doubleArrowUp: <ArrowDownDoubleIcon color="white" />,
 };
 
 export default {
@@ -18,10 +14,10 @@ export default {
   component: ButtonIcon,
   args: {
     children: iconMap['plus'],
-    colors: 'primary',
-    sizes: 'md',
+    color: 'primary',
+    size: 'md',
     loading: false,
-    disable: false
+    disabled: false
   },
   argTypes: {
     children: {
@@ -29,15 +25,15 @@ export default {
       options: Object.keys(iconMap),
       mapping: iconMap,
     },
-    colors: {
+    color: {
       control: { type: 'inline-radio' },
       options: ['primary', 'secondary', 'tertiary'],
     },
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
       options: ['sm', 'md', 'lg'],
     },
-    disable: { control: 'boolean' },
+    disabled: { control: 'boolean' },
   },
   decorators: [
     (Story) => (
@@ -52,13 +48,13 @@ export const Primary: StoryObj<ButtonIconProps> = {}
 
 export const Secondary: StoryObj<ButtonIconProps> = {
   args: {
-    colors: 'secondary',
+    color: 'secondary',
   },
 }
 
 export const Tertiary: StoryObj<ButtonIconProps> = {
   args: {
-    colors: 'tertiary',
+    color: 'tertiary',
   },
 }
 
@@ -70,6 +66,6 @@ export const Loading: StoryObj<ButtonIconProps> = {
 
 export const Disabled: StoryObj<ButtonIconProps> = {
   args: {
-    disable: true,
+    disabled: true,
   },
 }

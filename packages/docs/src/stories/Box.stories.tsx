@@ -6,7 +6,6 @@ export default {
   component: Box,
   argTypes: {
     hover: { control: 'boolean' },
-    full: { control: 'boolean' }
   },
   decorators: [
     (Story) => (
@@ -20,6 +19,8 @@ export default {
 export const Default: StoryObj<BoxProps> = {
   args: {
     hover: true,
-    full: false
   },
+  render: (args) => (
+    <Box {...args} style={{ width: '20rem', height: '20rem' }} />
+  ),
 };

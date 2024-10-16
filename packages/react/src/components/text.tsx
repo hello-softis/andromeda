@@ -1,39 +1,49 @@
-import type { ComponentProps, ReactNode } from 'react';
-import { tv, VariantProps } from 'tailwind-variants';
-import '../index.css';
+import type { ReactNode, ComponentProps } from 'react'
+import { tv, VariantProps } from 'tailwind-variants'
+import { forwardRef } from 'react'
 
 const textVariants = tv({
-  base: 'text-grey-200 font-sans leading-normal m-0',
+  base: 'text-grey-800 dark:text-grey-200 font-sans',
   variants: {
-    sizes: {
+    size: {
       xs: 'text-xs',
       sm: 'text-sm',
-      md: 'text-md',
+      base: 'text-base',
       lg: 'text-lg',
     },
-    weights: {
+    weight: {
       normal: 'font-normal',
+      medium: 'font-medium',
+      semibold: 'font-semibold',
       bold: 'font-bold',
-    }
+    },
   },
   defaultVariants: {
-    sizes: 'md',
-    weights: 'normal'
+    size: 'base',
+    weight: 'medium',
   },
-});
+})
 
-export interface TextProps extends ComponentProps<'p'>, VariantProps<typeof textVariants> {
-  children: ReactNode,
-  weights?: 'normal' | 'bold'
-  sizes?: 'xs' | 'sm' | 'md' | 'lg',
-  weight?: boolean, 
+export interface TextProps
+  extends ComponentProps<'p'>,
+    VariantProps<typeof textVariants> {
+  children: ReactNode
+  size?: keyof typeof textVariants.variants.size
+  weight?: keyof typeof textVariants.variants.weight
+  className?: string
 }
 
-export function Text({ children, sizes, weight, ...props }: TextProps) {
-  const weights = weight ? 'bold' : 'normal'; 
+export const Text = forwardRef<React.ElementRef<'p'>, TextProps>(function Text(
+  { children, size, weight, className, ...props },
+  ref,
+) {
   return (
-    <p {...props} className={textVariants({ sizes, weights })}>
+    <p
+      ref={ref}
+      {...props}
+      className={`${textVariants({ size, weight })} ${className}`}
+    >
       {children}
     </p>
-  );
-}
+  )
+})

@@ -1,22 +1,26 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Slider, SliderProps } from '@hello.softis/andromeda-react'
+import { Box, SliderRoot, SliderTrack, SliderRange, SliderThumb, SliderProps } from '@hello.softis/andromeda-react';
+
 export default {
   title: 'Form/Slider',
-  component: Slider,
+  component: SliderRoot,
   args: {
     disabled: false,
-    initialValue: [50],
-    maxValue: 100
+    min: 30,
+    max: 100,
   },
   argTypes: {
     disabled: { control: 'boolean' },
-    maxValue: { control: 'number'},
-    initialValue: { control: 'number' }
+    max: { control: 'number' },
+    min: { control: 'number' },
+    children: { control: false },
   },
   decorators: [
     (Story) => (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <Story />
+        <Box className="w-96 p-4">
+          <Story />
+        </Box>
       </div>
     ),
   ],
@@ -25,15 +29,15 @@ export default {
 export const Default: StoryObj<SliderProps> = {
   args: {
     disabled: false,
-    initialValue: [50],
-    maxValue: 100
-  }
+    min: 30,
+    children: <><SliderTrack><SliderRange /></SliderTrack><SliderThumb /></>
+  },
 };
 
-export const Inactive: StoryObj<SliderProps> = {
+export const Disabled: StoryObj<SliderProps> = {
   args: {
     disabled: true,
-    initialValue: [50],
-    maxValue: 100
-  }
+    min: 30,
+    children: <><SliderTrack><SliderRange /></SliderTrack><SliderThumb /></>
+  },
 };

@@ -1,24 +1,24 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { TagDelete, TagDeleteProps } from '@hello.softis/andromeda-react'
+import { DeleteIcon, TagDelete, TagProps } from '@hello.softis/andromeda-react'
+import { Cancel01Icon } from '@houstonicons/react';
 
 export default {
   title: 'Data Display/Tag/TagDelete',
   component: TagDelete,
   args: {
-    children: 'LABEL',
-    sizes: 'md',
-    disable: false,
+    size: 'md',
+    disabled: false,
   },
   argTypes: {
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
       options: ['sm', 'md', 'lg'],
     },
-    disable: {
+    disabled: {
       control: { type: 'boolean' },
     },
-
+    children: { control: { disable: true } },
   },
   decorators: [
     (Story) => (
@@ -27,7 +27,19 @@ export default {
       </div>
     ),
   ],
-} as Meta<TagDeleteProps>;
+} as Meta<TagProps>;
 
-export const Default: StoryObj<TagDeleteProps> = {}
+export const Default: StoryObj<TagProps> = {
+  args: {
+    children: <>        LABEL
+    <DeleteIcon>
+      <Cancel01Icon size={8} color="white" />
+    </DeleteIcon></>,
+  },
+}
 
+export const Disabled: StoryObj<TagProps> = {
+  args: {
+    disabled: true,
+  },
+}

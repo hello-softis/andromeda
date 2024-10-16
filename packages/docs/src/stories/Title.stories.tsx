@@ -1,24 +1,25 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Heading, HeadingProps } from '@hello.softis/andromeda-react'
+import { Title, TitleProps } from '@hello.softis/andromeda-react'
 
 export default {
-  title: 'Typography/Heading',
-  component: Heading,
+  title: 'Typography/Title',
+  component: Title,
   args: {
     children: 'Title',
-    sizes: 'md',
-    weight: true,
+    size: 'base',
+    weight: 'normal',
     as: 'h2'
   },
   argTypes: {
-    sizes: {
+    size: {
       control: { type: 'inline-radio' },
-      options: ['sm', 'md', 'lg', 'xl', '2xl']
+      options: ['sm', 'md','base', 'lg', 'xl', '2xl', ]
     },
     weight: {
-      control: { type: 'boolean' },
-    }
+      control: { type: 'inline-radio' },
+      options: ['normal', 'medium', 'semibold', 'bold']
+    },
   },
   parameters:{
     docs: {
@@ -34,6 +35,6 @@ export default {
     </div>
     ),
   ]
-} as Meta<HeadingProps>;
+} as Meta<TitleProps>;
 
-export const Default: StoryObj<HeadingProps> = {}
+export const Default: StoryObj<TitleProps> = {}

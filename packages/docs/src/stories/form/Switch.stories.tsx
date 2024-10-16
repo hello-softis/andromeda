@@ -1,19 +1,24 @@
 import type { StoryObj, Meta } from '@storybook/react';
-import { Switch, SwitchProps } from '@hello.softis/andromeda-react'
+import { SwitchRoot, SwitchThumb, SwitchProps, Box, Text } from '@hello.softis/andromeda-react';
 
 export default {
   title: 'Form/Switch',
-  component: Switch,
-  children: 'Label',
-  disable: false,
+  component: SwitchRoot,
   argTypes: {
-    children: { control: 'text' },
-    disabled: { control: 'boolean' }
+    disabled: {
+      control: 'boolean',
+    },
+    children: {
+      control: false,
+    },
   },
   decorators: [
     (Story) => (
       <div className="flex justify-center items-center min-h-screen">
-        <Story />
+        <Box className='flex gap-4 p-4 w-[300px] items-center justify-center'>
+          <Story />
+          <Text>Label</Text>
+        </Box>
       </div>
     ),
   ],
@@ -21,14 +26,14 @@ export default {
 
 export const Default: StoryObj<SwitchProps> = {
   args: {
-    children: 'Label',
+    children: <SwitchThumb />, 
     disabled: false,
   },
 };
 
 export const Disabled: StoryObj<SwitchProps> = {
   args: {
-    children: 'Label',
+    children: <SwitchThumb />,
     disabled: true,
   },
 };

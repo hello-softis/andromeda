@@ -1,20 +1,17 @@
 import '../../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { ButtonEmptyState, ButtonEmptyProps } from '@hello.softis/andromeda-react'
-import { PlusIcon } from '@radix-ui/react-icons'
-
-PlusIcon.displayName = 'PlusIcon';
+import { ButtonEmptyState, ButtonProps } from '@hello.softis/andromeda-react'
 
 export default {
   title: 'Form/Button/EmptyStateButton',
   component: ButtonEmptyState,
   args: {
     children: 'Label',
-    leadingIcon: <PlusIcon className='text-softis-light size-[24px]' />
+    disabled: false,
   },
   argTypes: {
     children: { control: 'text' },
-    leadingIcon: { control: 'select'}
+    disabled: { control: 'boolean' },
   },
   decorators: [
     (Story) => (
@@ -23,6 +20,12 @@ export default {
       </div>
     ),
   ],
-} as Meta<ButtonEmptyProps>;
+} as Meta<ButtonProps>;
 
-export const Primary: StoryObj<ButtonEmptyProps> = {}
+export const Default: StoryObj<ButtonProps> = {}
+
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
+  },
+}
