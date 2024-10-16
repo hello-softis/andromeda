@@ -1,5 +1,6 @@
-import { type ReactNode, type ComponentProps, Fragment } from 'react'
+import type { ReactNode, ComponentProps } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
+import React from 'react'
 
 const breadcrumbVariants = tv({
   base: 'flex items-center gap-1 overflow-hidden text-sm text-grey-500 dark:text-grey-300',
@@ -38,7 +39,7 @@ export function Breadcrumb({
       className={`${breadcrumbVariants({ disabled })} ${className}`}
     >
       {crumbs.map((crumb, index) => (
-        <Fragment key={index}>
+        <React.Fragment key={index}>
           <a
             href={link ? link[index] : '#'}
             className={`whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis ${
@@ -64,7 +65,7 @@ export function Breadcrumb({
               />
             </svg>
           )}
-        </Fragment>
+        </React.Fragment>
       ))}
     </button>
   )

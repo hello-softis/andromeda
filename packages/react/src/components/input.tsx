@@ -1,3 +1,5 @@
+'use client'
+
 import type { ReactNode, ComponentProps } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 import { useCallback, useState } from 'react'

@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react'
-import { Text } from './text'
+import { Text } from './Text'
 
 export interface MultiStepProps extends ComponentProps<'div'> {
   className?: string

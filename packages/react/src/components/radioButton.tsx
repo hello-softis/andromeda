@@ -1,3 +1,5 @@
+'use client'
+
 import { type ReactNode, type ComponentProps, useState, useEffect } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 import { Text } from './text'

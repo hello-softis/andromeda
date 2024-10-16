@@ -1,5 +1,6 @@
 import type { ReactNode, ComponentProps } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
+import { forwardRef } from 'react'
 import { Spinner } from './spinner'
 
 const buttonVariants = tv({
@@ -127,19 +128,23 @@ export interface ButtonLinkProps
   disabled?: boolean
 }
 
-export function Button(
-    { children, className, disabled, full, color, size, ...props }: ButtonProps,
+export const Button = forwardRef<React.ElementRef<'button'>, ButtonProps>(
+  function Button(
+    { children, className, disabled, full, color, size, ...props },
+    ref,
   ) {
     return (
       <button
         {...props}
+        ref={ref}
         disabled={disabled}
         className={`${buttonVariants({ color, size, full, disabled })} ${className}`}
       >
         {children}
       </button>
     )
-  }
+  },
+)
 
 export function ButtonEmptyState({
   children,

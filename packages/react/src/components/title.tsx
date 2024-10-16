@@ -1,4 +1,4 @@
-import React, { ReactNode, ComponentProps } from 'react'
+import React, { ReactNode, ComponentProps, forwardRef } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const titleVariants = tv({
@@ -35,15 +35,17 @@ export interface TitleProps
   className?: string
 }
 
-export function Title(
-  { children, size, weight, className, as = 'h1', ...props }: TitleProps
+export const Title = forwardRef<HTMLElement, TitleProps>(function Title(
+  { children, size, weight, className, as = 'h1', ...props },
+  ref,
 ) {
   return React.createElement(
     as,
     {
       ...props,
+      ref,
       className: `${titleVariants({ size, weight })} ${className}`,
     },
     children,
   )
-}
+})
