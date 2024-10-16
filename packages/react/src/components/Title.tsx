@@ -35,17 +35,15 @@ export interface TitleProps
   className?: string
 }
 
-export const Title = forwardRef<HTMLHeadingElement, TitleProps>(function Title(
-  { children, size, weight, className, as = 'h1', ...props },
-  ref,
+export function Title(
+  { children, size, weight, className, as = 'h1', ...props }: TitleProps
 ) {
   return React.createElement(
     as,
     {
       ...props,
-      ref,
       className: `${titleVariants({ size, weight })} ${className}`,
     },
     children,
   )
-})
+}
