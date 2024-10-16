@@ -16,9 +16,9 @@
   "keywords": [],
   "author": "Softis",
   "devDependencies": {
-    "@hello.softis/andromeda-ts-config": "*",
     "@hello.softis/andromeda-eslint-config": "*",
     "@hello.softis/andromeda-tokens": "*",
+    "@hello.softis/andromeda-ts-config": "*",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
@@ -32,9 +32,8 @@
     "vite": "^5.3.4"
   },
   "dependencies": {
-    
-    "@radix-ui/react-avatar": "^1.1.0",
     "@chakra-ui/breadcrumb": "^2.2.0",
+    "@radix-ui/react-avatar": "^1.1.0",
     "@radix-ui/react-checkbox": "^1.1.1",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-radio-group": "^1.2.0",

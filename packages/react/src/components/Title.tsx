@@ -35,7 +35,7 @@ export interface TitleProps
   className?: string
 }
 
-export const Title = forwardRef<HTMLElement, TitleProps>(function Title(
+export const Title = forwardRef<HTMLHeadingElement, TitleProps>(function Title(
   { children, size, weight, className, as = 'h1', ...props },
   ref,
 ) {
