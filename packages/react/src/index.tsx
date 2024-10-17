@@ -16,8 +16,8 @@ export * from './components/card'
 export * from './components/skeleton'
 export * from './components/badge'
 export * from './components/hoverCard'
+export * from './components/tooltip'
 
-// Tooltip
 // Modal
 // SelectionField
 // Modal
