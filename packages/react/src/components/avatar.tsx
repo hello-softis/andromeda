@@ -116,3 +116,8 @@ export function Label({ children, className }: AvatarProps) {
     </div>
   )
 }
+
+AvatarRoot.displayName = 'AvatarRoot'
+AvatarImage.displayName = 'AvatarImage'
+AvatarFallback.displayName = 'AvatarFallback'
+Label.displayName = 'Label'
