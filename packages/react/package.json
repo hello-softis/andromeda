@@ -1,6 +1,6 @@
 {
   "name": "@hello.softis/andromeda-react",
-  "version": "5.0.1",
+  "version": "5.0.3",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
