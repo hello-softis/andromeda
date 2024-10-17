@@ -16,8 +16,5 @@
     "babel-plugin-transform-react-display-name": "^6.25.0",
     "turbo": "^2.0.7"
   },
-  "packageManager": "npm@20.0.0",
-  "dependencies": {
-    "@houstonicons/react": "^4.1.2"
-  }
+  "packageManager": "npm@20.0.0"
 }
