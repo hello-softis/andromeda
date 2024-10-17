@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-Nms4Y4qS.js";/* empty css              */import{aj as c}from"./index-5nC-JSu0.js";import"./index-BwDkhjyp.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-B8XB3FuZ.js";const x={title:"Data Display/Tag/Tag",component:c,args:{children:"LABEL",size:"md",disabled:!1},argTypes:{size:{control:{type:"inline-radio"},options:["sm","md","lg"]},disabled:{control:{type:"boolean"}}},decorators:[l=>s.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh"},children:s.jsx(l,{})})]},e={},r={args:{disabled:!0}};var a,t,o;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:"{}",...(o=(t=e.parameters)==null?void 0:t.docs)==null?void 0:o.source}}};var i,d,n;r.parameters={...r.parameters,docs:{...(i=r.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    disabled: true
+  }
+}`,...(n=(d=r.parameters)==null?void 0:d.docs)==null?void 0:n.source}}};const y=["Default","Disabled"];export{e as Default,r as Disabled,y as __namedExportsOrder,x as default};

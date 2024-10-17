@@ -1,0 +1,5 @@
+import{j as r}from"./jsx-runtime-Nms4Y4qS.js";/* empty css              */import{U as l}from"./index-5nC-JSu0.js";import"./index-BwDkhjyp.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-B8XB3FuZ.js";const x={title:"Form/Button/EmptyStateButton",component:l,args:{children:"Label",disabled:!1},argTypes:{children:{control:"text"},disabled:{control:"boolean"}},decorators:[d=>r.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100vh"},children:r.jsx(d,{})})]},e={},t={args:{disabled:!0}};var s,o,a;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:"{}",...(a=(o=e.parameters)==null?void 0:o.docs)==null?void 0:a.source}}};var n,i,c;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  args: {
+    disabled: true
+  }
+}`,...(c=(i=t.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};const y=["Default","Disabled"];export{e as Default,t as Disabled,y as __namedExportsOrder,x as default};
