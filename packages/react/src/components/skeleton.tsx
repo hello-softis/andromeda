@@ -9,3 +9,5 @@ export function Skeleton({ className }: SkeletonProps) {
     />
   )
 }
+
+Skeleton.className = 'Skeleton'
