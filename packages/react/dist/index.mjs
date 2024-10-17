@@ -4435,6 +4435,18 @@ function Icon({
   }, [iconName, size, variant, type, color, strokeWidth]);
   return svgElement;
 }
+function ArrowDown01Icon(_a) {
+  var _b = _a, {
+    iconName = "arrow-down-01"
+  } = _b, props = __objRest2(_b, [
+    "iconName"
+  ]);
+  return /* @__PURE__ */ jsx168(Icon, __spreadProps2(__spreadValues2({}, props), { iconName }));
+}
+function Tick02Icon(_a) {
+  var _b = _a, { iconName = "tick-02" } = _b, props = __objRest2(_b, ["iconName"]);
+  return /* @__PURE__ */ jsx3491(Icon, __spreadProps2(__spreadValues2({}, props), { iconName }));
+}
 function ViewIcon(_a) {
   var _b = _a, { iconName = "view" } = _b, props = __objRest2(_b, ["iconName"]);
   return /* @__PURE__ */ jsx3723(Icon, __spreadProps2(__spreadValues2({}, props), { iconName }));
@@ -5312,10 +5324,561 @@ function CardContent({ children, className }) {
 CardRoot.displayName = "CardRoot";
 CardHeader.displayName = "CardHeader";
 CardContent.displayName = "CardContent";
+
+// src/components/skeleton.tsx
+import { jsx as jsx4137 } from "react/jsx-runtime";
+function Skeleton({ className }) {
+  return /* @__PURE__ */ jsx4137(
+    "div",
+    {
+      className: `bg-slate-300 dark:bg-grey-600 animate-pulse ${className}`
+    }
+  );
+}
+Skeleton.className = "Skeleton";
+
+// src/components/badge.tsx
+import { tv as tv14 } from "tailwind-variants";
+import { jsx as jsx4138 } from "react/jsx-runtime";
+var badgeVariants = tv14({
+  base: "flex items-center text-center justify-center rounded-sm font-bold leading-none uppercase",
+  variants: {
+    variant: {
+      new: "bg-new-light text-new-low dark:bg-new-low dark:text-new-light",
+      danger: "bg-danger-light text-danger-low dark:bg-danger-low dark:text-danger-light",
+      success: "bg-success-light text-success-low dark:bg-success-low dark:text-success-light",
+      warning: "bg-warning-light text-warning-low dark:bg-warning-low dark:text-warning-light",
+      info: "bg-nebula-300 text-nebula-950 dark:bg-nebula-950 dark:text-nebula-300",
+      custom: "bg-softis-mid text-slate-50"
+    },
+    size: {
+      sm: "px-3 h-6 text-xs",
+      md: "px-3 h-7 text-sm",
+      lg: "px-4 h-8 text-md"
+    }
+  },
+  defaultVariants: {
+    variant: "custom",
+    size: "md"
+  }
+});
+function Badge(_a) {
+  var _b = _a, {
+    children,
+    variant,
+    size,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "variant",
+    "size",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4138(
+    "div",
+    __spreadProps(__spreadValues({}, props), {
+      className: `${badgeVariants({ variant, size })} ${className}`,
+      children
+    })
+  );
+}
+Badge.className = "Badge";
+
+// src/components/hoverCard.tsx
+import * as HoverCard from "@radix-ui/react-hover-card";
+import { jsx as jsx4139 } from "react/jsx-runtime";
+function HoverCardRoot({
+  children
+}) {
+  return /* @__PURE__ */ jsx4139(HoverCard.Root, { children });
+}
+function HoverCardTrigger({
+  children
+}) {
+  return /* @__PURE__ */ jsx4139(HoverCard.Trigger, { asChild: true, children });
+}
+function HoverCardPortal({
+  children
+}) {
+  return /* @__PURE__ */ jsx4139(HoverCard.Portal, { children });
+}
+function HoverCardContent({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4139(
+    HoverCard.Content,
+    {
+      align: "center",
+      className: `bg-slate-200 dark:bg-grey-800 border-2 border-slate-300 dark:border-grey-700 rounded-sm flex flex-col items-center py-8 px-[3.125rem] data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade data-[side=right]:animate-slideLeftAndFade data-[side=top]:animate-slideDownAndFade data-[state=open]:transition-all ${className}`,
+      children
+    }
+  );
+}
+function HoverCardArrow() {
+  return /* @__PURE__ */ jsx4139(HoverCard.Arrow, { className: "fill-slate-200 dark:fill-grey-800" });
+}
+HoverCardRoot.displayName = "HoverCardRoot";
+HoverCardTrigger.displayName = "HoverCardTrigger";
+HoverCardPortal.displayName = "HoverCardPortal";
+HoverCardContent.displayName = "HoverCardContent";
+HoverCardArrow.displayName = "HoverCardArrow";
+
+// src/components/tooltip.tsx
+import * as Tooltip from "@radix-ui/react-tooltip";
+import { jsx as jsx4140 } from "react/jsx-runtime";
+function TooltipProvider({
+  children
+}) {
+  return /* @__PURE__ */ jsx4140(Tooltip.Provider, { children });
+}
+function TooltipRoot({ children }) {
+  return /* @__PURE__ */ jsx4140(Tooltip.Root, { children });
+}
+function TooltipTrigger({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4140(Tooltip.Trigger, { asChild: true, className: `antialiased border-none ${className}`, children });
+}
+function TooltipPortal({
+  children
+}) {
+  return /* @__PURE__ */ jsx4140(Tooltip.Portal, { children });
+}
+function TooltipContent({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4140(
+    Tooltip.Content,
+    {
+      sideOffset: 5,
+      className: `select-none flex flex-col items-center py-3 px-4 w-[210px] bg-slate-100 dark:bg-grey-800 rounded-sm will-change-[transform,opacity] data-[state=delayed-open]:data-[side=bottom]:animate-slideUpAndFade data-[state=delayed-open]:data-[side=left]:animate-slideRightAndFade data-[state=delayed-open]:data-[side=right]:animate-slideLeftAndFade data-[state=delayed-open]:data-[side=top]:animate-slideDownAndFade antialiased border-none ${className}`,
+      children
+    }
+  );
+}
+function TooltipArrow() {
+  return /* @__PURE__ */ jsx4140(Tooltip.Arrow, { className: "fill-slate-100 dark:fill-grey-800 border-none mb-[1px]" });
+}
+TooltipRoot.displayName = "TooltipRoot";
+TooltipTrigger.displayName = "TooltipTrigger";
+TooltipPortal.displayName = "TooltipPortal";
+TooltipContent.displayName = "TooltipContent";
+TooltipArrow.displayName = "TooltipArrow";
+
+// src/components/modal.tsx
+import * as Dialog from "@radix-ui/react-dialog";
+import { jsx as jsx4141 } from "react/jsx-runtime";
+function ModalRoot({
+  children
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Root, { children });
+}
+function ModalTrigger({
+  children
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Trigger, { asChild: true, children });
+}
+function ModalPortal({
+  children
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Portal, { children });
+}
+function ModalOverlay() {
+  return /* @__PURE__ */ jsx4141(Dialog.Overlay, { className: `fixed inset-0 z-20 bg-black` });
+}
+function ModalContent({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4141(
+    Dialog.Content,
+    {
+      className: `max-w-[700px] flex flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vh] z-50 rounded-sm bg-slate-100 dark:bg-shape-secondary max-h-[50vh]`,
+      children: /* @__PURE__ */ jsx4141("div", { className: `p-8 overflow-y-auto ${className}`, children })
+    }
+  );
+}
+function ModalTitle({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Title, { className: `${className}`, children });
+}
+function ModalDescription({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Description, { className: `${className}`, children });
+}
+function ModalActions({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4141(
+    "div",
+    {
+      className: `justify-end border-t border-slate-200 dark:border-grey-600 bg-slate-100 dark:bg-shape-secondary flex items-center gap-2 p-8 sticky ${className}`,
+      children
+    }
+  );
+}
+function ModalClose({
+  children,
+  className
+}) {
+  return /* @__PURE__ */ jsx4141(Dialog.Close, { className: `${className}`, children });
+}
+ModalRoot.displayName = "ModalRoot";
+ModalTrigger.displayName = "ModalTrigger";
+ModalPortal.displayName = "ModalPortal";
+ModalOverlay.displayName = "ModalOverlay";
+ModalContent.displayName = "ModalContent";
+ModalTitle.displayName = "ModalTitle";
+ModalDescription.displayName = "ModalDescription";
+ModalActions.displayName = "ModalActions";
+ModalClose.displayName = "ModalClose";
+
+// src/components/selectionField.tsx
+import * as Select from "@radix-ui/react-select";
+import { forwardRef as forwardRef4 } from "react";
+import { jsx as jsx4142, jsxs as jsxs5 } from "react/jsx-runtime";
+function SelectFieldRoot(_a) {
+  var _b = _a, {
+    children
+  } = _b, props = __objRest(_b, [
+    "children"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Root, __spreadProps(__spreadValues({}, props), { children }));
+}
+function SelectFieldTrigger(_a) {
+  var _b = _a, {
+    children,
+    className,
+    ariaLabel
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className",
+    "ariaLabel"
+  ]);
+  return /* @__PURE__ */ jsx4142(
+    Select.Trigger,
+    __spreadProps(__spreadValues({}, props), {
+      className: `min-h-12 min-w-[300px] bg-slate-200 dark:bg-grey-800 border-2 rounded-sm transition-colors flex items-center flex-wrap justify-between outline-none relative box-border focus:border-softis-mid focus:shadow-sm text-gray-800 dark:text-zinc-50 py-1 px-2 gap-2 border-none ${className}`,
+      "aria-label": ariaLabel,
+      children
+    })
+  );
+}
+function SelectFieldValue(_a) {
+  var _b = _a, {
+    placeholder,
+    className
+  } = _b, props = __objRest(_b, [
+    "placeholder",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(
+    Select.Value,
+    __spreadProps(__spreadValues({}, props), {
+      placeholder,
+      className: `placeholder:text-grey-800 placeholder:dark:text-grey-200 placeholder:font-sans placeholder:text-base placeholder:font-normal ${className}`
+    })
+  );
+}
+function SelectFieldIcon(_a) {
+  var _b = _a, {
+    className
+  } = _b, props = __objRest(_b, [
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Icon, __spreadProps(__spreadValues({}, props), { className: `${className}`, children: /* @__PURE__ */ jsx4142(ArrowDown01Icon, { size: 16, color: "white" }) }));
+}
+function SelectFieldPortal(_a) {
+  var _b = _a, {
+    children
+  } = _b, props = __objRest(_b, [
+    "children"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Portal, __spreadProps(__spreadValues({}, props), { children }));
+}
+function SelectFieldContent(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Content, __spreadProps(__spreadValues({}, props), { className: `z-20 p-0 ${className}`, children }));
+}
+function SelectFieldViewPort(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(
+    Select.Viewport,
+    __spreadProps(__spreadValues({}, props), {
+      className: `z-20 p-4 h-12 box-border font-normal text-text-title flex items-center bg-grey-800 rounded-sm w-max justify-start ${className}`,
+      children
+    })
+  );
+}
+function SelectedFieldGroup(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Group, __spreadProps(__spreadValues({}, props), { className: `flex flex-col gap-1 ${className}`, children }));
+}
+function SelectedFieldLabel(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Label, __spreadProps(__spreadValues({}, props), { className: `${className}`, children }));
+}
+var SelectedFieldItem = forwardRef4(function SelectedFieldItem2(_a, ref) {
+  var _b = _a, { children, value, className } = _b, props = __objRest(_b, ["children", "value", "className"]);
+  return /* @__PURE__ */ jsxs5(
+    Select.Item,
+    __spreadProps(__spreadValues({}, props), {
+      ref,
+      value,
+      className: `flex items-center gap-2 px-4 py-1 h-12 box-border bg-slate-100 dark:bg-grey-800 text-sm font-normal text-grey-800 dark:text-text-title border-t border-t-slate-200 dark:border-t-grey-700 outline-none border-none dark:data-[state=checked]:bg-grey-700 data-[state=checked]:bg-slate-400 rounded-sm ${className}`,
+      children: [
+        /* @__PURE__ */ jsx4142(Select.ItemText, { children }),
+        /* @__PURE__ */ jsx4142(SelectedFieldIndicator, {})
+      ]
+    })
+  );
+});
+function SelectedFieldIndicator(_a) {
+  var _b = _a, {
+    className
+  } = _b, props = __objRest(_b, [
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.ItemIndicator, __spreadProps(__spreadValues({}, props), { className: `${className}`, children: /* @__PURE__ */ jsx4142(Tick02Icon, { color: "white", strokeWidth: 2, variant: "solid" }) }));
+}
+function SelectFieldSeparator(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4142(Select.Separator, __spreadProps(__spreadValues({}, props), { className: `m-1 h-1 bg-grey-600 ${className}`, children }));
+}
+SelectFieldRoot.displayName = "SelectFieldRoot";
+SelectFieldTrigger.displayName = "SelectFieldTrigger";
+SelectFieldValue.displayName = "SelectFieldValue";
+SelectFieldIcon.displayName = "SelectFieldIcon";
+SelectFieldPortal.displayName = "SelectFieldPortal";
+SelectFieldContent.displayName = "SelectFieldContent";
+SelectFieldViewPort.displayName = "SelectFieldViewPort";
+SelectedFieldGroup.displayName = "SelectedFieldGroup";
+SelectedFieldLabel.displayName = "SelectedFieldLabel";
+SelectedFieldItem.displayName = "SelectedFieldItem";
+SelectedFieldIndicator.displayName = "SelectedFieldIndicator";
+SelectFieldSeparator.displayName = "SelectFieldSeparator";
+
+// src/components/dropdown.tsx
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { jsx as jsx4143 } from "react/jsx-runtime";
+function DropdownRoot(_a) {
+  var _b = _a, {
+    children
+  } = _b, props = __objRest(_b, [
+    "children"
+  ]);
+  return /* @__PURE__ */ jsx4143(DropdownMenu.Root, __spreadProps(__spreadValues({}, props), { children }));
+}
+function DropdownTrigger(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(DropdownMenu.Trigger, __spreadProps(__spreadValues({ asChild: true, className: `${className}` }, props), { children }));
+}
+function DropdownPortal(_a) {
+  var _b = _a, {
+    children
+  } = _b, props = __objRest(_b, [
+    "children"
+  ]);
+  return /* @__PURE__ */ jsx4143(DropdownMenu.Portal, __spreadProps(__spreadValues({}, props), { children }));
+}
+function DropdownContent(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.Content,
+    __spreadProps(__spreadValues({}, props), {
+      sideOffset: 5,
+      side: "right",
+      className: `bg-slate-100 dark:bg-grey-800 rounded-sm ${className}`,
+      children
+    })
+  );
+}
+function DropdownLabel(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.Label,
+    __spreadProps(__spreadValues({}, props), {
+      className: `group py-3 px-4 min-w-[140px] ${className}`,
+      children
+    })
+  );
+}
+function DropdownItem(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.Item,
+    __spreadProps(__spreadValues({
+      className: `group py-3 px-4 min-w-[140px] border-none outline-none ${className}`
+    }, props), {
+      children
+    })
+  );
+}
+function DropdownGroup(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(DropdownMenu.Group, __spreadProps(__spreadValues({ className: `${className}` }, props), { children }));
+}
+function DropdownCheckboxItem(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.CheckboxItem,
+    __spreadProps(__spreadValues({}, props), {
+      className: `py-3 px-4 min-w-[140px] flex gap-2 items-center border-none outline-none ${className}`,
+      children
+    })
+  );
+}
+function DropdownRadioGroup(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(DropdownMenu.RadioGroup, __spreadProps(__spreadValues({ className: `${className}` }, props), { children }));
+}
+function DropdownRadioItem(_a) {
+  var _b = _a, {
+    children,
+    className,
+    value
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className",
+    "value"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.RadioItem,
+    __spreadProps(__spreadValues({
+      value,
+      className: `py-3 px-4 min-w-[140px] flex gap-2 items-center border-none outline-none ${className}`
+    }, props), {
+      children
+    })
+  );
+}
+function DropdownItemIndicator(_a) {
+  var _b = _a, {
+    children,
+    className
+  } = _b, props = __objRest(_b, [
+    "children",
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.ItemIndicator,
+    __spreadProps(__spreadValues({
+      className: `border-none outline-none ${className}`
+    }, props), {
+      children
+    })
+  );
+}
+function DropdownSeparator(_a) {
+  var _b = _a, {
+    className
+  } = _b, props = __objRest(_b, [
+    "className"
+  ]);
+  return /* @__PURE__ */ jsx4143(
+    DropdownMenu.Separator,
+    __spreadProps(__spreadValues({}, props), {
+      className: `m-1 h-px bg-grey-600 ${className}`
+    })
+  );
+}
+DropdownRoot.displayName = "DropdownRoot";
+DropdownTrigger.displayName = "DropdownTrigger";
+DropdownPortal.displayName = "DropdownPortal";
+DropdownContent.displayName = "DropdownContent";
+DropdownLabel.displayName = "DropdownLabel";
+DropdownItem.displayName = "DropdownItem";
+DropdownGroup.displayName = "DropdownGroup";
+DropdownCheckboxItem.displayName = "DropdownCheckboxItem";
+DropdownRadioGroup.displayName = "DropdownRadioGroup";
+DropdownRadioItem.displayName = "DropdownRadioItem";
+DropdownItemIndicator.displayName = "DropdownItemIndicator";
+DropdownSeparator.displayName = "DropdownSeparator";
 export {
   AvatarFallback,
   AvatarImage,
   AvatarRoot,
+  Badge,
   Box,
   Breadcrumb,
   Button,
@@ -5328,11 +5891,50 @@ export {
   CheckboxIndicator,
   CheckboxRoot,
   DeleteIcon,
+  DropdownCheckboxItem,
+  DropdownContent,
+  DropdownGroup,
+  DropdownItem,
+  DropdownItemIndicator,
+  DropdownLabel,
+  DropdownPortal,
+  DropdownRadioGroup,
+  DropdownRadioItem,
+  DropdownRoot,
+  DropdownSeparator,
+  DropdownTrigger,
+  HoverCardArrow,
+  HoverCardContent,
+  HoverCardPortal,
+  HoverCardRoot,
+  HoverCardTrigger,
   Label,
+  ModalActions,
+  ModalClose,
+  ModalContent,
+  ModalDescription,
+  ModalOverlay,
+  ModalPortal,
+  ModalRoot,
+  ModalTitle,
+  ModalTrigger,
   MultiStep,
   PasswordField,
   RadioButtonItem,
   RadioButtonRoot,
+  SelectFieldContent,
+  SelectFieldIcon,
+  SelectFieldPortal,
+  SelectFieldRoot,
+  SelectFieldSeparator,
+  SelectFieldTrigger,
+  SelectFieldValue,
+  SelectFieldViewPort,
+  SelectedFieldGroup,
+  SelectedFieldIndicator,
+  SelectedFieldItem,
+  SelectedFieldLabel,
+  Skeleton,
   SliderRange,
   SliderRoot,
   SliderThumb,
@@ -5345,5 +5947,11 @@ export {
   Text,
   TextArea,
   TextField,
-  Title
+  Title,
+  TooltipArrow,
+  TooltipContent,
+  TooltipPortal,
+  TooltipProvider,
+  TooltipRoot,
+  TooltipTrigger
 };
