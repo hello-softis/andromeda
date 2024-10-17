@@ -13,14 +13,8 @@
   ],
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
+    "babel-plugin-transform-react-display-name": "^6.25.0",
     "turbo": "^2.0.7"
   },
-  "packageManager": "npm@20.0.0",
-  "dependencies": {
-    "@andromeda-ui/react": "^0.1.51",
-    "@andromeda-ui/styles": "^0.1.51",
-    "@andromeda-ui/web": "^0.1.51",
-    "@houstonicons/react": "^4.1.2",
-    "vite": "^5.4.9"
-  }
+  "packageManager": "npm@20.0.0"
 }
