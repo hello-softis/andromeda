@@ -16,7 +16,8 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-interactions"),
     "@storybook/addon-a11y",
-    "@storybook/addon-styling-webpack"
+    "@storybook/addon-styling-webpack",
+    '@storybook/addon-docs'
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -26,10 +27,18 @@ const config: StorybookConfig = {
     autodocs: true,
   },
   viteFinal: (config, { configType }) => {
+    // Ajusta o base no modo produção
     if (configType === 'PRODUCTION') {
-      config.base = '/andromeda/'
+      config.base = '/andromeda/';
     }
-    return config
+
+    // Desabilitar a minificação em ambos os modos (produção e desenvolvimento)
+    config.esbuild = {
+      minify: false as any, // Desabilita a minificação no Vite
+    };
+
+    return config;
   }
 };
+
 export default config;

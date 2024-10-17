@@ -1,6 +1,10 @@
 import '../index.css';
 import type { StoryObj, Meta } from '@storybook/react';
-import { AvatarRoot, AvatarImage, AvatarFallback, Label, AvatarProps } from '@hello.softis/andromeda-react'
+import { AvatarRoot, AvatarImage, AvatarFallback, Label, AvatarProps as OriginalAvatarProps } from '@hello.softis/andromeda-react'
+
+interface AvatarProps extends OriginalAvatarProps {
+  label: string;
+}
 
 export default {
   title: 'Data Display/Avatar',
@@ -54,11 +58,14 @@ export const Default: StoryObj<AvatarProps> = {
 };
 
 export const WithLabel: StoryObj<AvatarProps> = {
+  args: {
+    theme: 'creator',
+  },
   render: (args) => (
-    <AvatarRoot theme="company" size="xl">
-      <AvatarImage alt="Gusttavo Castro" src="https://github.com/.png" />
+    <AvatarRoot theme={args.theme} size={args.size}>
+      <AvatarImage alt={args.name} src={args.src} />
       <AvatarFallback>{getInitials(args.name || '')}</AvatarFallback>
-      <Label>{'creator'.toUpperCase()}</Label>
+      <Label>{args.label.toUpperCase()}</Label>
     </AvatarRoot>
   ),
 };
