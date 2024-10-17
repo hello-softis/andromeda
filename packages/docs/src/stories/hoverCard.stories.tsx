@@ -3,7 +3,7 @@ import { HoverCardRoot, HoverCardPortal, HoverCardContent, HoverCardTrigger, Hov
 import { Add01Icon } from '@houstonicons/react';
 
 export default {
-  title: 'Surfaces/Hover Card',
+  title: 'Overlay/Hover Card',
   component: HoverCardRoot,
   argTypes: {
     children: { control: { disable: true } },

@@ -11,7 +11,7 @@ import {   TooltipArrow,
   Box} from '@hello.softis/andromeda-react'
 
 export default {
-  title: 'Surfaces/Tooltip',
+  title: 'Overlay/Tooltip',
   component: TooltipProvider,
   argTypes: {
     children: { control: { disable: true } },
