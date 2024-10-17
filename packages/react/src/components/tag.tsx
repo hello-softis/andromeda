@@ -99,3 +99,5 @@ export function TagDelete({
     </button>
   )
 }
+
+Tag.displayName = 'Tag'

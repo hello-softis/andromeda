@@ -51,3 +51,6 @@ export function SwitchThumb({
     />
   )
 }
+
+SwitchRoot.displayName = 'SwitchRoot'
+SwitchThumb.displayName = 'SwitchThumb'

@@ -87,3 +87,6 @@ export function RadioButtonItem({
     </div>
   )
 }
+
+RadioButtonRoot.displayName = 'RadioButtonRoot'
+RadioButtonItem.displayName = 'RadioButtonItem'

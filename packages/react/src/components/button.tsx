@@ -204,3 +204,8 @@ export function ButtonLink({
     </a>
   )
 }
+
+Button.displayName = 'Button'
+ButtonEmptyState.displayName = 'ButtonEmptyState'
+ButtonIcon.displayName = 'ButtonIcon'
+ButtonLink.displayName = 'ButtonLink'

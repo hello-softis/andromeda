@@ -122,3 +122,7 @@ export function PasswordField({
       </TextField>
   )
 }
+
+TextArea.displayName = 'TextArea'
+TextField.displayName = 'TextField'
+PasswordField.displayName = 'PasswordField'

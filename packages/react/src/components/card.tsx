@@ -30,3 +30,7 @@ export function CardContent({ children, className }: CardProps) {
     </div>
   )
 }
+
+CardRoot.displayName = 'CardRoot'
+CardHeader.displayName = 'CardHeader'
+CardContent.displayName = 'CardContent'

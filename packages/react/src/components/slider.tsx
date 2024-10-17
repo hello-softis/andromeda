@@ -94,3 +94,8 @@ export function SliderThumb({
     />
   )
 }
+
+SliderRoot.displayName = 'SliderRoot'
+SliderTrack.displayName = 'SliderTrack'
+SliderRange.displayName = 'SliderRange'
+SliderThumb.displayName = 'SliderThumb'

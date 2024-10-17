@@ -87,3 +87,5 @@ export function Spinner({ sizes, colors }: SpinnerProps) {
     <div className={checkboxVariants({ sizes, colors })}></div>
   )
 }
+
+Spinner.displayName = 'Spinner';

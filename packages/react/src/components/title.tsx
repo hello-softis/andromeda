@@ -49,3 +49,5 @@ export const Title = forwardRef<HTMLElement, TitleProps>(function Title(
     children,
   )
 })
+
+Title.displayName = 'Title'

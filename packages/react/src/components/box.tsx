@@ -28,3 +28,5 @@ export function Box({ children, hover, className, ...props }: BoxProps) {
     </div>
   );
 }
+
+Box.displayName = 'Box';

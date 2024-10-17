@@ -47,3 +47,5 @@ export const Text = forwardRef<React.ElementRef<'p'>, TextProps>(function Text(
     </p>
   )
 })
+
+Text.displayName = 'Text'

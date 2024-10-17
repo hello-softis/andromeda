@@ -38,3 +38,5 @@ export function MultiStep({
     </div>
   )
 }
+
+MultiStep.displayName = 'MultiStep'

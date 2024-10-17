@@ -75,3 +75,6 @@ export function CheckboxIndicator({
     </Checkbox.Indicator>
   )
 }
+
+CheckboxRoot.displayName = 'CheckboxRoot'
+CheckboxIndicator.displayName = 'CheckboxIndicator'

@@ -70,3 +70,5 @@ export function Breadcrumb({
     </button>
   )
 }
+
+Breadcrumb.displayName = 'Breadcrumb'
